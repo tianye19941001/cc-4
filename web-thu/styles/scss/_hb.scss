@@ -102,7 +102,7 @@ span {
                 font-size: 12px;
                 padding: 0 7px 0 1px;
 
-                &:hover{
+                &:hover {
                     opacity: 1;
                 }
             }
@@ -126,9 +126,11 @@ span {
             padding: 0 8px;
             color: rgba(255, 255, 255, 1);
             opacity: 0.7;
-            &:hover{
+
+            &:hover {
                 opacity: 1;
             }
+
             i {
                 font-style: normal;
                 display: inline-block;
@@ -217,7 +219,7 @@ span {
                 color: rgba(171, 132, 85, 1);
             }
 
-            &.active{
+            &.active {
                 background: rgba(171, 132, 85, 1);
                 color: #fff;
             }
@@ -239,14 +241,22 @@ span {
 .carousel {
     position: relative;
 
+    .swiper-slide-active {
+        img {
+            z-index: 9;
+        }
+    }
+
     .swiper-container {
         width: 100%;
         min-width: 1200px;
         height: 780px;
+        padding-bottom: 50px;
+        background:rgba(243,243,246,1);
+        margin-bottom: -30px;
 
         .swiper-slide {
             width: 100%;
-            overflow: hidden;
             min-width: 1200px;
             position: relative;
 
@@ -257,7 +267,8 @@ span {
                 height: 100%;
                 transform: translate(-50%, -50%);
                 transition: all .3s;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.05) translate(-50%, -50%);
                 }
             }
@@ -265,69 +276,58 @@ span {
             .center {
                 position: absolute;
                 text-align: center;
-                bottom: 86px;
+                bottom: -30px;
                 left: 50%;
-                z-index: 9;
-                width: 1045px;
-                height: 80px;
-                background-image: url(../images/swiper_center.png);
-                font-size: 28px;
-                color: rgba(255, 255, 255, 1);
-                line-height: 80px;
                 transform: translateX(-50%);
-                span{
-                    width: 85%;
+                z-index: 9;
+                width: 1200px;
+                height: 144px;
+                line-height: 144px;
+                font-size: 28px;
+                color: rgba(0, 0, 0, 1);
+                background: #fff;
+                border-radius: 2px;
+                box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
+
+                span {
+                    width: 95%;
                     display: block;
                     white-space: nowrap;
                     margin: 0 auto;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-
-                &:after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    width: 256px;
-                    height: 196px;
-                    background-image: url(../images/tip.png);
-                    background-size: 100% 100%;
-                    right: -57px;
-                    top: 0;
-                }
             }
         }
 
         // 分页器
         #center {
-            bottom: 37px !important;
+            bottom: 180px !important;
 
             .swiper-pagination-bullet {
                 width: 12px;
                 height: 12px;
                 margin: 0 8px;
                 background-color: #fff;
+                opacity: 0.4;
             }
-            .swiper-pagination-bullet-active{
-                width: 12px;
-                height: 12px;
-                background: transparent;
-                box-sizing: border-box;
-                border: 1px solid #fff;
+
+            .swiper-pagination-bullet-active {
+                opacity: 1;
             }
         }
     }
 }
 
 @media screen and (min-width:1921px) and (max-width:3000px) {
-   .carousel{
+    .carousel {
         .swiper-container {
-            .swiper-slide img{
+            .swiper-slide img {
                 width: 100%;
                 height: auto;
             }
         }
-   } 
+    }
 }
 
 // 内容标题
@@ -459,7 +459,7 @@ span {
         display: inline-block;
         width: 12px;
         height: 12px;
-        background: rgba(218,215,208,.5);
+        background: rgba(218, 215, 208, .5);
         border-radius: 50%;
         margin: 0 10px !important;
     }
@@ -518,7 +518,7 @@ footer {
                 transition: all .5s;
                 position: relative;
 
-                .socialwraper{
+                .socialwraper {
                     position: absolute;
                     background: #fff;
                     width: 130px;
@@ -529,7 +529,8 @@ footer {
                     border: 1px solid #ccc;
                     display: none;
                     z-index: 1;
-                    i{
+
+                    i {
                         border-color: transparent;
                         border-style: solid;
                         border-width: 10px;
@@ -543,7 +544,8 @@ footer {
                         margin-left: -8px;
                         top: -10px;
                     }
-                    em{
+
+                    em {
                         border-color: transparent;
                         border-style: solid;
                         border-width: 10px;
@@ -556,15 +558,18 @@ footer {
                         left: -10px;
                         top: 1px;
                     }
-                    img{
+
+                    img {
                         width: 100%;
                         height: auto;
                         margin: 0;
                     }
                 }
 
-                &:hover{
-                    .socialwraper{ display: block;}
+                &:hover {
+                    .socialwraper {
+                        display: block;
+                    }
                 }
 
                 &:last-child {

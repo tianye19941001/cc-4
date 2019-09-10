@@ -64,20 +64,20 @@ sup {
 
 /*CLEARFIX
 -------------------------------------------------------------- */
-.clearfix:after, .nav .nav_list .in:after, .newList:after, footer .footer_top:after, .ty-new-list .list > a:after, .ty-new-list3 .list a:after, .ty-zs .sp:after {
+.clearfix:after, .nav .nav_list .in:after, .newList:after, footer .footer_top:after, .ty-new-list .list > a:after, .ty-new-list3 .list a:after {
   content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden; }
 
-.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-zs .sp {
+.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a {
   display: inline-block; }
 
-* html .clearfix, * html .nav .nav_list .in, .nav .nav_list * html .in, * html .newList, * html footer .footer_top, footer * html .footer_top, * html .ty-new-list .list > a, .ty-new-list * html .list > a, * html .ty-new-list3 .list a, .ty-new-list3 .list * html a, * html .ty-zs .sp, .ty-zs * html .sp {
+* html .clearfix, * html .nav .nav_list .in, .nav .nav_list * html .in, * html .newList, * html footer .footer_top, footer * html .footer_top, * html .ty-new-list .list > a, .ty-new-list * html .list > a, * html .ty-new-list3 .list a, .ty-new-list3 .list * html a {
   height: 1%; }
 
-.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a, .ty-zs .sp {
+.clearfix, .nav .nav_list .in, .newList, footer .footer_top, .ty-new-list .list > a, .ty-new-list3 .list a {
   display: block; }
 
 /*FONT
@@ -379,7 +379,7 @@ span {
   outline: none; }
 
 /*多行溢出*/
-.one_cut, .ty-download .in .name {
+.one_cut {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -543,13 +543,17 @@ span {
 
 .carousel {
   position: relative; }
+  .carousel .swiper-slide-active img {
+    z-index: 9; }
   .carousel .swiper-container {
     width: 100%;
     min-width: 1200px;
-    height: 780px; }
+    height: 780px;
+    padding-bottom: 50px;
+    background: #f3f3f6;
+    margin-bottom: -30px; }
     .carousel .swiper-container .swiper-slide {
       width: 100%;
-      overflow: hidden;
       min-width: 1200px;
       position: relative; }
       .carousel .swiper-container .swiper-slide img {
@@ -564,46 +568,35 @@ span {
       .carousel .swiper-container .swiper-slide .center {
         position: absolute;
         text-align: center;
-        bottom: 86px;
+        bottom: -30px;
         left: 50%;
+        transform: translateX(-50%);
         z-index: 9;
-        width: 1045px;
-        height: 80px;
-        background-image: url(../images/swiper_center.png);
+        width: 1200px;
+        height: 144px;
+        line-height: 144px;
         font-size: 28px;
-        color: white;
-        line-height: 80px;
-        transform: translateX(-50%); }
+        color: black;
+        background: #fff;
+        border-radius: 2px;
+        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05); }
         .carousel .swiper-container .swiper-slide .center span {
-          width: 85%;
+          width: 95%;
           display: block;
           white-space: nowrap;
           margin: 0 auto;
           overflow: hidden;
           text-overflow: ellipsis; }
-        .carousel .swiper-container .swiper-slide .center:after {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 256px;
-          height: 196px;
-          background-image: url(../images/tip.png);
-          background-size: 100% 100%;
-          right: -57px;
-          top: 0; }
     .carousel .swiper-container #center {
-      bottom: 37px !important; }
+      bottom: 180px !important; }
       .carousel .swiper-container #center .swiper-pagination-bullet {
         width: 12px;
         height: 12px;
         margin: 0 8px;
-        background-color: #fff; }
+        background-color: #fff;
+        opacity: 0.4; }
       .carousel .swiper-container #center .swiper-pagination-bullet-active {
-        width: 12px;
-        height: 12px;
-        background: transparent;
-        box-sizing: border-box;
-        border: 1px solid #fff; }
+        opacity: 1; }
 
 @media screen and (min-width: 1921px) and (max-width: 3000px) {
   .carousel .swiper-container .swiper-slide img {
@@ -1033,69 +1026,15 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       padding-top: 26px;
       width: 166px; }
 
-.ty-general {
-  width: 100%;
-  padding: 96px 0 150px;
-  position: relative;
-  overflow: hidden; }
-  .ty-general .ty-title {
-    margin-bottom: 60px; }
-  .ty-general .in {
-    width: 1060px;
-    height: 720px;
-    margin: 0 auto;
-    position: relative; }
-    .ty-general .in .img {
-      width: 100000px;
-      height: 100%;
-      overflow: hidden; }
-    .ty-general .in img {
-      height: 120%;
-      display: block; }
-    .ty-general .in p {
-      width: 496px;
-      background: #fff;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 68px 82px 147px 0;
-      font-size: 18px;
-      color: #121212;
-      line-height: 36px; }
-    .ty-general .in a {
-      position: absolute;
-      left: -15px;
-      bottom: 0; }
-
 .ty-training {
   width: 100%;
   padding: 130px 0 170px;
   height: 468px;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/new/ll.png);
+  background-image: url(../images-2/about-detial.png);
   position: relative;
   overflow: hidden; }
-  .ty-training img {
-    position: absolute;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%); }
-  .ty-training .in {
-    width: 712px;
-    margin: 0 auto;
-    font-size: 18px;
-    color: #121212;
-    line-height: 30px;
-    position: relative;
-    z-index: 2; }
-    .ty-training .in h3 {
-      margin-bottom: 30px; }
-    .ty-training .in p {
-      margin-bottom: 30px; }
-    .ty-training .in a {
-      margin: 65px auto 0; }
 
 .bdsharebuttonbox {
   display: none; }
@@ -1137,11 +1076,8 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       color: #121212;
       line-height: 1.5; }
     .ty-connect .in a {
-      position: absolute;
-      bottom: 70px;
-      left: -14px;
-      width: 526px;
-      background-image: url(../images/new/bk-bar2.png); }
+      display: block;
+      margin: 24px auto; }
       .ty-connect .in a:hover {
         font-size: 21px; }
 
@@ -1607,148 +1543,11 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       left: 250px;
       bottom: -26px; }
 
-.ty-zs {
-  text-align: right;
-  min-width: 1200px;
-  overflow: hidden;
-  margin-bottom: 100px; }
-  .ty-zs .ty-title {
-    padding: 80px 0 60px; }
-  .ty-zs .img-in {
-    width: 100000px;
-    height: 660px;
-    overflow: hidden; }
-  .ty-zs .img {
-    width: 1190px;
-    height: 660px;
-    margin: 0 auto; }
-    .ty-zs .img img {
-      width: 1900px;
-      margin-left: 130px;
-      margin-top: -150px;
-      display: block; }
-  .ty-zs .in {
-    position: absolute;
-    left: 10%;
-    bottom: 100px;
-    width: 380px;
-    padding: 70px 100px 100px 100px;
-    text-align: left;
-    background: #fff; }
-  .ty-zs .container-2 {
-    width: 100%; }
-  .ty-zs h3 {
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-    line-height: 32px;
-    margin-bottom: 40px; }
-  .ty-zs li {
-    font-size: 18px;
-    font-weight: 400;
-    color: #121212;
-    line-height: 24px;
-    margin-bottom: 24px;
-    cursor: pointer; }
-    .ty-zs li:last-child {
-      margin-bottom: 0; }
-  .ty-zs .sp em {
-    float: left;
-    height: 48px;
-    line-height: 48px; }
-  .ty-zs .sp span {
-    float: left; }
-  .ty-zs em {
-    font-size: 30px;
-    font-family: Roboto-LightItalic;
-    font-weight: normal;
-    color: #063456;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 32px;
-    font-style: italic; }
-  .ty-zs .strong,
-  .ty-zs li:hover {
-    font-weight: bold; }
-    .ty-zs .strong em,
-    .ty-zs li:hover em {
-      font-weight: bold; }
-    .ty-zs .strong span,
-    .ty-zs li:hover span {
-      color: #063456; }
-  .ty-zs .ty-more {
-    position: absolute;
-    text-align: center;
-    bottom: -29px;
-    left: 100px; }
-
-.ty-download {
-  background: #f3f3f6;
-  padding: 84px 0 204px;
-  margin-bottom: -117px; }
-  .ty-download .warp {
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 52px;
-    position: relative; }
-  .ty-download .img,
-  .ty-download img {
-    width: 664px;
-    height: 476px;
-    display: block;
-    overflow: hidden; }
-  .ty-download .in {
-    position: absolute;
-    top: 64px;
-    right: 0;
-    background: #fff;
-    padding: 60px 80px;
-    width: 500px;
-    line-height: 80px; }
-    .ty-download .in li {
-      font-size: 18px;
-      height: 80px;
-      color: black;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-    .ty-download .in .time {
-      font-size: 18px;
-      color: rgba(0, 0, 0, 0.7);
-      font-style: italic;
-      margin-right: 40px; }
-    .ty-download .in .name {
-      display: inline-block;
-      height: 100%;
-      vertical-align: top;
-      width: 270px; }
-    .ty-download .in .download {
-      float: right;
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-      text-align: center;
-      margin-top: 22.5px;
-      display: block;
-      background: #C6C6C6;
-      color: #fff;
-      font-size: 24px;
-      transition: all .3s; }
-      .ty-download .in .download:hover {
-        background: #063456; }
-  .ty-download .ty-more {
-    position: absolute;
-    left: 80px;
-    bottom: -29px; }
-
 .add-more {
   padding-top: 30px; }
   .add-more a {
     margin: 0 auto; }
 
-@media screen and (min-width: 1020px) and (max-width: 1680px) {
-  .ty-zs .img img {
-    width: auto;
-    height: 100%;
-    margin-top: 0; } }
 .for-mobile {
   display: none; }
 
@@ -1876,8 +1675,6 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
           padding: 0.5rem 0.6rem;
           transform: translateX(-50%);
           background: rgba(171, 132, 85, 0.8); }
-          body .carousel .swiper-container .swiper-slide .center:after {
-            display: none; }
           body .carousel .swiper-container .swiper-slide .center span {
             width: 100%; }
       body .carousel .swiper-container #center {
@@ -2110,53 +1907,10 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         padding-top: 1.3rem;
         width: 8.3rem; }
 
-  .ty-general {
-    padding: 3.5rem 0 5.5rem; }
-    .ty-general .ty-title {
-      margin-bottom: 3rem; }
-    .ty-general .in {
-      width: 100%;
-      height: auto; }
-      .ty-general .in .img {
-        width: 100%;
-        height: auto; }
-      .ty-general .in img {
-        width: 100%;
-        height: auto; }
-      .ty-general .in p {
-        position: relative;
-        width: 90%;
-        height: auto;
-        display: block;
-        margin: -2rem auto 0;
-        box-sizing: border-box;
-        padding: 3rem;
-        font-size: 1rem;
-        line-height: 1.8rem;
-        height: auto;
-        left: 0%;
-        top: 0%; }
-      .ty-general .in a {
-        position: absolute;
-        left: 0rem;
-        bottom: -2rem; }
-
   .ty-training {
     width: 100%;
     height: auto;
     padding: 4rem 0; }
-    .ty-training img {
-      position: absolute; }
-    .ty-training .in {
-      width: 90%;
-      font-size: 1rem;
-      line-height: 1.5rem; }
-      .ty-training .in h3 {
-        margin-bottom: 1.5rem; }
-      .ty-training .in p {
-        margin-bottom: 1.5rem; }
-      .ty-training .in a {
-        margin: 3.25rem auto 0; }
 
   .ty-connect {
     padding: 4rem 0 0;
@@ -2476,87 +2230,6 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         margin-right: 2.5rem; }
       .ty-sport .main .ty-more {
         position: static; }
-
-  .ty-zs {
-    min-width: 100%;
-    margin-bottom: 2.5rem; }
-    .ty-zs .ty-title {
-      padding: 2rem 0; }
-    .ty-zs .img-in {
-      width: 100%;
-      height: auto; }
-    .ty-zs .img {
-      width: 100%;
-      height: auto;
-      margin: 0 auto; }
-      .ty-zs .img img {
-        width: 100%;
-        margin-top: 0;
-        margin-left: 0; }
-    .ty-zs .bg {
-      width: 100%;
-      height: auto; }
-    .ty-zs .in {
-      position: static;
-      width: 90%;
-      padding: 3rem 3rem 3.5rem;
-      padding-bottom: 5rem;
-      box-sizing: border-box;
-      margin: -5rem auto 0; }
-    .ty-zs h3 {
-      font-size: 1.5rem;
-      line-height: 1.6rem;
-      margin-bottom: 2rem; }
-    .ty-zs li {
-      font-size: 0.9rem;
-      line-height: 1.2rem;
-      margin-bottom: 1.2rem; }
-    .ty-zs .sp em {
-      height: 2.4rem;
-      line-height: 2.4rem; }
-    .ty-zs em {
-      font-size: 1.5rem;
-      margin-right: 1.6rem; }
-    .ty-zs .ty-more {
-      bottom: 0.5rem;
-      left: 2rem; }
-
-  .ty-download {
-    padding: 3rem 0;
-    margin-bottom: -4rem; }
-    .ty-download .warp {
-      width: 100%;
-      margin-top: 2.5rem; }
-    .ty-download .img,
-    .ty-download img {
-      width: 100%;
-      height: auto; }
-    .ty-download .in {
-      position: static;
-      top: 3.2rem;
-      background: #fff;
-      padding: 2rem 2rem 1rem;
-      width: 25rem;
-      line-height: 4rem;
-      margin: -5rem auto 0; }
-      .ty-download .in li {
-        font-size: 1rem;
-        height: 4rem; }
-      .ty-download .in .time {
-        font-size: 1rem;
-        margin-right: 2rem; }
-      .ty-download .in .name {
-        width: 13.5rem; }
-      .ty-download .in .download {
-        width: 1.75rem;
-        height: 1.75rem;
-        line-height: 1.75rem;
-        margin-top: 1.1rem;
-        font-size: 1.2rem; }
-    .ty-download .ty-more {
-      position: static;
-      display: block;
-      margin: 1.5rem auto 0; }
 
   .add-more {
     padding-top: 0rem;
