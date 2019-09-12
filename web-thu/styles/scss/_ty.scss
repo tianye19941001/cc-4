@@ -88,7 +88,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 }
 
 .ty-banner {
-  height: 355px;
+  height: 350px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -103,29 +103,19 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 
   h2 {
-    width: 337px;
-    height: 74px;
+    width: 389px;
+    height: 114px;
     line-height: 74px;
     text-align: center;
     font-size: 28px;
     color: rgba(255, 255, 255, 1);
-    background-image: url(../images/new/title.png);
-    background-size: 100% 100%;
+    background-image: url(../images-2/title.png);
+    background-size: cover;
     position: absolute;
-    left: 0;
-    bottom: 80px;
-
-    &:after {
-      content: '';
-      width: 211px;
-      height: 158px;
-      display: block;
-      position: absolute;
-      background-image: url(../images/new/title-bottom.png);
-      background-size: 100% 100%;
-      top: 0;
-      right: -49px;
-    }
+    right: 0;
+    bottom: 54px;
+    box-sizing: border-box;
+    padding: 0 50px 0 0;
   }
 
   .nav-list {
@@ -136,7 +126,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     height: 55px;
     line-height: 55px;
     text-align: center;
-    background: rgba(255, 255, 255, .85);
+    background:rgba(243,243,246,1);
     font-size: 20px;
 
     span {
@@ -275,47 +265,45 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   overflow: hidden;
 
   .dean-img {
-    width: 483px;
+    width: 466px;
     position: relative;
 
     img {
-      width: 483px;
+      width: 466px;
       display: block;
     }
 
     .name {
-      width: 407px;
-      height: 122px;
+      width:304px;
+      height:109px;
       position: absolute;
-      bottom: 20px;
-      right: -16px;
+      bottom: 42px;
+      right: -12px;
       color: rgba(255, 255, 255, 1);
-      background-image: url(../images/new/xz-bar.png);
-      background-size: 100% 100%;
-      text-align: right;
+      text-align: center;
+      background: rgba(25, 115, 193, 1);
     }
 
     h3 {
       font-size: 24px;
-      padding: 12px 80px 0 0;
+      padding-top: 20px;
     }
 
     p {
       font-size: 18px;
       opacity: .7;
-      padding-right: 80px;
     }
   }
 
   .dean-say {
-    width: 654px;
+    width: 684px;
     position: relative;
 
     p {
       font-size: 18px;
       color: rgba(18, 18, 18, 1);
-      line-height: 30px;
-      margin-bottom: 30px;
+      line-height: 32px;
+      text-indent: 36px;
     }
 
     .ty-title {
@@ -333,13 +321,16 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 .ty-training {
   width: 100%;
-  padding: 130px 0 170px;
-  height: 768-300px;
-  background-size: cover;
+  padding: 120px 0 0;
+  height: 761px;
+  box-sizing: border-box;
+  background-size: contain;
   background-position: center;
   background-image: url(../images-2/about-detial.png);
   position: relative;
   overflow: hidden;
+
+
 }
 
 .bdsharebuttonbox {
@@ -357,10 +348,14 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 }
 
 .ty-connect {
-  padding: 167px 0 70px;
+  padding: 100px 0 90px;
   width: 1200px;
   margin: 0 auto;
   position: relative;
+
+  .ty-title {
+    margin-bottom: 30px;
+  }
 
   img {
     width: 100%;
@@ -369,13 +364,12 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
   .in {
     position: absolute;
-    width: 609px;
+    width: 719px;
     height: 484px;
     background: rgba(255, 255, 255, 1);
-    opacity: 0.9;
-    bottom: -25px;
+    top: 600px;
     left: 50%;
-    margin-left: -304.5px;
+    transform: translateX(-50%);
 
     .ty-title {
       padding-top: 48px;
@@ -389,11 +383,12 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       font-size: 18px;
       color: rgba(18, 18, 18, 1);
       line-height: 1.5;
+      padding-top: 68px;
     }
 
     a {
       display: block;
-      margin:  24px auto;
+      margin: 53px auto;
 
       &:hover {
         font-size: 21px;
@@ -422,7 +417,6 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 .ty-new-list {
   width: 575+575+50px;
   margin: 0 auto;
-  overflow: hidden;
 
   .list {
     padding: 50px 0;
@@ -432,12 +426,12 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       @extend .clearfix;
       display: block;
       width: 575-60px;
-      height: 315-80px;
+      height: 216-60px;
       background: rgba(255, 255, 255, 1);
       margin-left: 50px;
       float: left;
       box-shadow: 0 0 6px rgba(0, 0, 0, .15);
-      padding: 40px 30px;
+      padding: 30px;
       margin-bottom: 38px;
       position: relative;
       transition: all .3s;
@@ -450,7 +444,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         left: 0;
         width: 576px;
         height: 3px;
-        background: #AB8455;
+        background: rgba(25, 115, 193, 1);
         opacity: 0;
         transform: translateY(50px);
         transition: all .3s;
@@ -470,14 +464,16 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   .time {
     float: left;
     font-size: 12px;
-    color: rgba(6, 52, 86, 1);
+    color: rgba(6,52,86,1);;
     line-height: 18px;
+    font-weight:300;
     width: 30px;
     text-align: center;
 
     strong {
       display: block;
       font-size: 25px;
+      font-weight:300;
     }
   }
 
@@ -499,10 +495,10 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
     p {
       font-size: 13px;
-      color: rgba(18, 18, 18, 1);
+      color:rgba(18,18,18,.78);
       line-height: 23px;
       opacity: 0.78;
-      height: 23*6px;
+      height: 23*3px;
       @extend .six_cut;
     }
 
@@ -510,8 +506,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       content: '';
       display: block;
       width: 1px;
-      height: 165px;
-      background: rgba(0, 0, 0, 1);
+      height: 132px;
+      background: rgba(0, 0, 0, .3);
       opacity: 0.17;
       position: absolute;
       left: -1px;
@@ -973,18 +969,18 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 }
 
 .ty-sport {
-  padding: 90px 0 270px;
+  padding: 90px 0 420px;
   width: 100%;
   overflow: hidden;
   background: rgba(243, 243, 246, 1);
   position: relative;
 
   .left-img {
-    width: 789px;
-    height: 506px;
+    width: 1012px;
+    height: 455px;
     display: block;
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 660px;
   }
 
@@ -999,9 +995,9 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     background: #fff;
     width: 100000px;
     position: relative;
+    top: 172px;
     z-index: 3;
-    margin-left: 346px;
-    ;
+    margin-left: 480px;
 
     .list {
       width: 748px;
@@ -1033,19 +1029,116 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
     .ty-more {
       position: absolute;
-      left: 250px;
-      bottom: -26px;
+      left: 0;
+      bottom: -120px;
     }
   }
 }
 
 // 招生
+.ty-doctor {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 
+  .all-img {
+    height: 1160px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
 
+  .ty-title {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 2;
+  }
+
+  .doctor-list {
+    position: absolute;
+    top: 150px;
+    width: 1200px;
+    height: 950px;
+    background: rgba(25, 115, 193, 1);
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+
+    ul {
+      padding: 30px 65px;
+    }
+
+    li {
+      float: left;
+      width: 500px;
+      height: 222px;
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, .3);
+
+      &:nth-child(2n) {
+        margin-left: 70px;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    .left {
+      float: left;
+      width: 115px;
+      font-size: 72px;
+      padding-top: 10px;
+      font-weight: 300;
+    }
+
+    .right {
+      width: 385px;
+      float: right;
+    }
+
+    h3 {
+      font-size: 24px;
+      padding-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      font-size: 12px;
+      line-height: 18px;
+      opacity: 0.7;
+      height: 54px;
+    }
+
+    .tags {
+      padding-top: 10px;
+
+      em {
+        display: inline-block;
+        margin-right: 10px;
+        width: 90px;
+        height: 30px;
+        background: rgba(255, 255, 255, 1);
+        font-size: 14px;
+        color: rgba(25, 115, 193, 1);
+        border-radius: 30px;
+        text-align: center;
+        line-height: 30px;
+      }
+      a {
+        color: rgba(25, 115, 193, 1);
+      }
+    }
+  }
+}
+.ty-index-report {
+  padding-top: 70px;
+
+}
 
 .add-more {
-  padding-top: 30px;
-
   a {
     margin: 0 auto;
   }
