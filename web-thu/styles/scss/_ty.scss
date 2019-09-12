@@ -529,7 +529,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   font-size: 12px;
   color: rgba(6, 52, 86, 1);
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
 
   a {
@@ -703,19 +703,34 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   .left-bar {
     float: left;
     width: 110px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 500px;
+      background:rgba(0,0,0,.1);
+    }
 
     .time {
       padding: 24px;
       display: inline-block;
-      background: rgba(185, 154, 117, 1);
+      background: #1973C1;
       color: #fff;
       font-size: 18px;
       text-align: center;
       margin-bottom: 120px;
+      font-weight: 300;
 
       strong {
         display: block;
         font-size: 35px;
+        font-weight: 300;
+        line-height: 1;
       }
     }
 

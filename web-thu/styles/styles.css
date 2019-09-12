@@ -1170,7 +1170,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
   font-size: 12px;
   color: #063456;
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0; }
   .ty-crumbs a {
     color: #063456; }
@@ -1297,18 +1297,31 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     margin-bottom: 20px; }
   .ty-new-detial .left-bar {
     float: left;
-    width: 110px; }
+    width: 110px;
+    position: relative; }
+    .ty-new-detial .left-bar:after {
+      content: '';
+      display: block;
+      width: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 500px;
+      background: rgba(0, 0, 0, 0.1); }
     .ty-new-detial .left-bar .time {
       padding: 24px;
       display: inline-block;
-      background: #b99a75;
+      background: #1973C1;
       color: #fff;
       font-size: 18px;
       text-align: center;
-      margin-bottom: 120px; }
+      margin-bottom: 120px;
+      font-weight: 300; }
       .ty-new-detial .left-bar .time strong {
         display: block;
-        font-size: 35px; }
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 1; }
     .ty-new-detial .left-bar .share {
       width: 84px;
       text-align: center; }
