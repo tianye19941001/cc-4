@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+$hoverColor: #1973c1;
+
 .oh {
   overflow: hidden;
 }
@@ -7,6 +9,10 @@
 body {
   background-color: #fff;
   min-width: 1200px;
+}
+
+.bg-white {
+  background: white !important;
 }
 
 // 首页补充
@@ -126,7 +132,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     height: 55px;
     line-height: 55px;
     text-align: center;
-    background:rgba(243,243,246,1);
+    background: rgba(243, 243, 246, 1);
     font-size: 20px;
 
     span {
@@ -155,8 +161,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
       &.active,
       &:hover {
-        color: #AB8455;
-        font-weight: 600;
+        color: #1973c1;
       }
     }
   }
@@ -210,10 +215,11 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       margin-right: 20px;
       font-size: 21px;
       color: rgba(63, 63, 63, 1);
+      font-weight: 300;
 
       &:hover,
       &.active {
-        color: #AB8455;
+        color: $hoverColor;
         font-weight: bold;
       }
 
@@ -274,8 +280,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     }
 
     .name {
-      width:304px;
-      height:109px;
+      width: 304px;
+      height: 109px;
       position: absolute;
       bottom: 42px;
       right: -12px;
@@ -416,10 +422,11 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 .ty-new-list {
   width: 575+575+50px;
+  padding-top: 50px;
   margin: 0 auto;
 
   .list {
-    padding: 50px 0;
+    padding: 0 0;
     margin-left: -50px;
 
     >a {
@@ -464,16 +471,17 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   .time {
     float: left;
     font-size: 12px;
-    color: rgba(6,52,86,1);;
+    color: rgba(6, 52, 86, 1);
+    ;
     line-height: 18px;
-    font-weight:300;
+    font-weight: 300;
     width: 30px;
     text-align: center;
 
     strong {
       display: block;
       font-size: 25px;
-      font-weight:300;
+      font-weight: 300;
     }
   }
 
@@ -495,7 +503,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
     p {
       font-size: 13px;
-      color:rgba(18,18,18,.78);
+      color: rgba(18, 18, 18, .78);
       line-height: 23px;
       opacity: 0.78;
       height: 23*3px;
@@ -945,28 +953,6 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 }
 
 // 校园生活
-.ty-school-student {
-  padding: 70px 0 160px;
-
-  .boll {
-    margin-top: 0;
-    position: relative;
-    top: -80px;
-  }
-
-  div.student_content {
-    padding-top: 80px;
-  }
-
-  div.title {
-    margin-bottom: 40px;
-  }
-
-  .ty-more {
-    display: block;
-    margin: 55px auto 0;
-  }
-}
 
 .ty-sport {
   padding: 90px 0 420px;
@@ -1127,19 +1113,150 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         text-align: center;
         line-height: 30px;
       }
+
       a {
         color: rgba(25, 115, 193, 1);
       }
     }
   }
 }
+
 .ty-index-report {
   padding-top: 70px;
-
 }
 
 .add-more {
   a {
     margin: 0 auto;
+  }
+}
+
+.ty-product-list {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+
+  li {
+    float: left;
+    width: 580px;
+    height: 372px;
+    position: relative;
+    margin-bottom: 90px;
+
+    &:nth-child(2n) {
+      margin-left: 40px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .in {
+    position: absolute;
+    width: 380px;
+    right: -16px;
+    height: 330px;
+    top: 70px;
+    background: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    padding: 0 0 0 50px;
+  }
+
+  .num {
+    font-size: 72px;
+    font-weight: 400;
+    color: rgba(233, 233, 233, 1);
+    line-height: 72px;
+    position: absolute;
+    top: 44px;
+    right: 16px;
+    display: block;
+  }
+
+  h3 {
+    padding-top: 60px;
+    width: 200px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(6, 29, 63, 1);
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    width: 300px;
+    font-size: 14px;
+    color: rgba(6, 29, 63, 1);
+  }
+
+  .tags {
+    overflow: hidden;
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+
+    em {
+      width: 90px;
+      height: 30px;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(25, 115, 193, 1);
+      font-size: 14px;
+      color: rgba(25, 115, 193, 1);
+      line-height: 30px;
+      text-align: center;
+      border-radius: 30px;
+      margin-right: 12px;
+      display: inline-block;
+    }
+
+    a {
+      color: rgba(25, 115, 193, 1);
+    }
+  }
+}
+
+.ty-report-list {
+  padding: 30px 50px;
+  width: 1200px;
+  box-sizing: border-box;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+
+  ul{
+    margin-bottom: 30px;
+  }
+
+  li {
+    height: 75px;
+    line-height: 75px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &:hover {
+      .time, .text {font-weight: 600}
+    }
+  }
+
+  .time {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(6, 52, 86, 1);
+    width: 64+91px;
+  }
+
+  .text {
+    width: 900px;
+    font-size: 18px;
+    font-weight: 400;
   }
 }
