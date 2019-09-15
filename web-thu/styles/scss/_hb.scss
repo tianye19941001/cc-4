@@ -216,11 +216,11 @@ span {
             padding: 0 20px;
 
             &:hover {
-                color: rgba(171, 132, 85, 1);
+                color: rgba(25, 115, 193, 1);
             }
 
             &.active {
-                background: rgba(171, 132, 85, 1);
+                background: rgba(25, 115, 193, 1);
                 color: #fff;
             }
         }
@@ -231,7 +231,7 @@ span {
             height: 3px;
             left: 10px;
             bottom: 0px;
-            background: rgba(171, 132, 85, 1);
+            background: rgba(25, 115, 193, 1);
             transition: all .5s;
         }
     }

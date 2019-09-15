@@ -95,10 +95,10 @@
 
  	// 动画
  	function animateInit() {
- 		var toTop = '.content,.student_life,footer,.ty-title,.ty-projects .project, .map .student,.ty-general .in,.report-list,.ty-new-list a,.new-main p,.new-main img,.ty-bk img,.ty-department-list,.set-in .zy';
- 		var toLeft = '.title,.ts-tit,.school_life_content,.nav-list,.dean-say,.ty-training .in,.ty-connect p,.ty-guidance .r,.ty-recruit,.ty-vocation,.report-in .right,.ty-new-list2 .list a,.ty-new-list3 .list a,.ty-zs img,.ty-download img,.ty-sport .in,.ty-ugd-programme img';
- 		var toRight = '.newList,.school_life_list,.ty-more,.ty-banner h2,.dean-img,.ty-guidance img,.report-in .left,.left-bar .time,.left-bar .share,.ty-zs .in,.ty-download .in,.ty-sport img,.set-in .img,.ty-pro-list';
- 		var toBottom = '.e,.ty-connect img';
+ 		var toTop = '.content,.student_life,footer,.ty-title,.ty-projects .project, .map .student,.ty-general .in,.report-list,.ty-new-list a,.new-main p,.new-main img,.ty-bk img,.ty-department-list,.set-in .zy,.doctor-list,.ty-product-list li,.ty-public-div .detial p';
+ 		var toLeft = '.title,.ts-tit,.school_life_content,.nav-list,.dean-say,.ty-training .in,.ty-connect p,.ty-guidance .r,.ty-recruit,.ty-vocation,.report-in .right,.ty-new-list2 .list a,.ty-new-list3 .list a,.ty-zs img,.ty-download img,.ty-sport .in,.ty-ugd-programme img,.ty-report-list li,.main .step,.ty-years li';
+ 		var toRight = '.newList,.school_life_list,.ty-more,.ty-banner h2,.dean-img,.ty-guidance img,.report-in .left,.left-bar .time,.left-bar .share,.ty-zs .in,.ty-download .in,.ty-sport img,.set-in .img,.ty-pro-list,.doctor-list li, .main .about p,.ty-public-div img';
+ 		var toBottom = '.e,.ty-connect img,.ty-connect-zs .in';
  		var toBig = '.points i,.ty-how-connect,.teacher,.ty-ugd-course img';
  		addAnimate($(toTop), 'an_toTop');
  		addAnimate($(toLeft), 'an_toLeft');
