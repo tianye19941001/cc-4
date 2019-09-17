@@ -79,25 +79,29 @@
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper1_02.png">
-						<div class="center"><i class="prev-icon for-mobile"></i><i class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
+						<div class="center"><i class="prev-icon for-mobile"></i><i
+								class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
 					</a>
 				</div>
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper2_02.png">
-						<div class="center"><i class="prev-icon for-mobile"></i><i class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
+						<div class="center"><i class="prev-icon for-mobile"></i><i
+								class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
 					</a>
 				</div>
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper3_02.png">
-						<div class="center"><i class="prev-icon for-mobile"></i><i class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
+						<div class="center"><i class="prev-icon for-mobile"></i><i
+								class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
 					</a>
 				</div>
 				<div class="swiper-slide">
 					<a href="javascript:;">
 						<img src="./images/swiper4_02.png">
-						<div class="center"><i class="prev-icon for-mobile"></i><i class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
+						<div class="center"><i class="prev-icon for-mobile"></i><i
+								class="next-icon for-mobile"></i><span>博士毕业生张佳敏在清华经管学院2018毕业典礼上的发言</span></div>
 					</a>
 				</div>
 
@@ -316,6 +320,10 @@
 				slideChangeTransitionEnd: function () {
 					$('.carousel .center').fadeIn(500);
 				},
+			},
+			navigation: {
+				nextEl: '.carousel .next-icon',
+				prevEl: '.carousel .prev-icon',
 			}
 		})
 
@@ -323,63 +331,6 @@
 			swiperBannar.autoplay.stop();
 		}).mouseleave(function () {
 			swiperBannar.autoplay.start();
-		});
-
-		var swiperStudent = new Swiper('.student-swiper-container', {
-			pagination: {
-				el: '.student-boll',
-				clickable: true,
-			},
-			grabCursor: true,
-			paginationClickable: true,
-			autoplay: {
-				delay: 3000
-			},
-			slidesPerView: '3',
-			loop: true,
-		});
-
-		$(".student-swiper-container").mouseenter(function () {
-			swiperStudent.autoplay.stop();
-		}).mouseleave(function () {
-			swiperStudent.autoplay.start();
-		});
-
-		var swiperNews;
-		if (document.body.clientWidth >= 1024) {
-			swiperNews = new Swiper('.news-swiper-container', {
-				slidesPerView: 2,
-				spaceBetween: 30,
-				pagination: {
-					el: '.news-boll',
-					clickable: true,
-				},
-				grabCursor: true,
-				speed: 1000,
-				paginationClickable: true,
-				autoplay: {
-					delay: 3000
-				}
-			});
-		} else {
-			swiperNews = new Swiper('.news-swiper-container', {
-				slidesPerView: 1,
-				pagination: {
-					el: '.news-boll',
-					clickable: true,
-				},
-				speed: 1000,
-				paginationClickable: true,
-				autoplay: {
-					delay: 3000
-				}
-			});
-		}
-
-		$(".news-swiper-container").mouseenter(function () {
-			swiperNews.autoplay.stop();
-		}).mouseleave(function () {
-			swiperNews.autoplay.start();
 		});
 	</script>
 </body>
