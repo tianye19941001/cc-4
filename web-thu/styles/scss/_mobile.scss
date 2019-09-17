@@ -164,7 +164,7 @@
     .carousel {
       .swiper-container {
         min-width: 100%;
-        height: rem(744);
+        height: rem(544);
         padding-bottom: rem(60);
 
         .swiper-slide-active {
@@ -183,17 +183,18 @@
             background-image: none;
             font-size: rem(28);
             line-height: rem(36);
-            padding: rem(10) rem(12);
+            padding: rem(40) rem(12);
             transform: translateX(-50%);
 
             span {
+              clear: both;
+              width: rem(480);
               font-size: rem(28);
               font-weight: 400;
               color: rgba(0, 0, 0, 1);
               line-height: rem(42);
               max-height: rem(84);
               overflow: hidden;
-              width: 100%;
               white-space: normal;
             }
           }
@@ -201,7 +202,7 @@
 
         // 分页器
         #center {
-          bottom: rem(210) !important;
+          bottom: rem(250) !important;
 
           .swiper-pagination-bullet {
             width: rem(12);
@@ -616,7 +617,7 @@
     width: 100%;
 
     .list {
-      padding: rem(50) 0;
+      padding: rem(30) 0;
       margin-left: 0;
 
       >a {
@@ -891,12 +892,12 @@
     margin: 0 auto rem(50);
 
     .ty-title {
-      font-size: rem(40);
+      font-size: rem(32);
     }
 
     li {
-      line-height: rem(60);
-      font-size: rem(28);
+      line-height: rem(40);
+      font-size: rem(20);
     }
 
     a {
@@ -914,10 +915,10 @@
     margin: 0 auto rem(50);
 
     .ty-title {
-      font-size: rem(40);
+      font-size: rem(32);
     }
 
-    font-size:rem(24);
+    font-size:rem(20);
     line-height:rem(40);
 
     &:after {
@@ -943,7 +944,7 @@
 
   // 校园生活
   .ty-sport {
-    padding: rem(120) 0 rem(200);
+    padding: rem(100) 0 rem(200);
     width: 100%;
 
     .ty-title {
@@ -1003,8 +1004,10 @@
 
   .ty-doctor {
     height: 95rem;
+
     .all-img {
-      width: rem(1920);
+      width: auto;
+      height: 93rem;
     }
   
     .ty-title {
@@ -1016,7 +1019,7 @@
   
     .doctor-list {
       position: absolute;
-      top: 150px;
+      top: rem(180);
       width: rem(580);
       height: auto;
       background: rgba(25, 115, 193, 1);
@@ -1200,6 +1203,340 @@
     .text {
       width: 100%;
       font-size: rem(24);
+    }
+  }
+
+  .ty-zs-doc {
+    min-width: 100%;
+    margin-bottom: rem(100);
+  
+    .main {
+      width: 100%;
+      height: auto;
+    }
+  
+    .step {
+      width: 100%;
+      position: static;
+      right: 0;
+  
+      h3 {
+        padding-top: rem(76);
+        font-size: rem(30);
+        font-weight: bold;
+        line-height: rem(36);
+        text-align: center;
+        margin: rem(-450) auto rem(50);
+      }
+  
+      img {
+        width: 100%;
+      }
+  
+      ul {
+        position: static;
+        right: auto;
+        top: auto;
+        margin: 0 auto;
+        width: rem(216+350);
+      }
+  
+      li {
+        position: relative;
+        width: rem(216+350);
+        margin-bottom: rem(18);
+        padding-left: rem(216);
+  
+        .point {
+          width: rem(216);
+          height: rem(108);
+          line-height: rem(108);
+          font-size: rem(24);
+          padding-right: rem(108);
+  
+          em {
+            position: absolute;
+            width: rem(108);
+          }
+  
+          span {
+            font-size: rem(14);
+          }
+        }
+  
+        .detial {
+          width: rem(348);
+          padding: rem(20) rem(25);
+        }
+  
+        .second {
+          font-size: rrm(15);
+          line-height: rem(24);
+          margin-bottom: rem(20);
+  
+          span {
+            &:last-child {
+              padding-left: rem(24);
+            }
+          }
+        }
+  
+        .one {
+          font-size: rem(15);
+          line-height: rem(24);
+          margin-bottom: rem(15);
+        }
+  
+        .text {
+          font-size: rem(14);
+          line-height: rem(18);
+        }
+      }
+    }
+  
+    .ty-title {
+      padding: rem(70) 0 rem(20);
+    }
+  
+    .about {
+      position: static;
+      padding: rem(50);
+      width: rem(382);
+      font-size: rem(18);
+      line-height: rem(30);
+      text-indent: rem(36);
+      right: auto;
+      top: auto;
+      transform: translateY(0);
+      margin: rem(50) auto 0;
+    }
+  }
+  .ty-zs-doc-2 {
+    padding-bottom: rem(50);
+  }
+
+  .ty-public-div {
+    width: 100%;
+    height: auto;
+  
+    img {
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+  
+    .detial {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(500);
+      box-sizing: border-box;
+      padding: rem(30);
+      font-size: rem(18);
+      color: rgba(255, 255, 255, 1);
+      line-height: rem(30);
+      background: rgba(25, 115, 193, 1);
+  
+      h3 {
+        font-size: rem(30);
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        line-height: rem(32);
+        margin-bottom: rem(24);
+      }
+    }
+  
+    .ty-more {
+      margin: rem(50) auto 0;
+      color: rgba(25, 115, 193, 1);
+      background: #fff;
+    }
+  }
+
+  .ty-connect-zs {
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: rem(50) 0;
+    margin: 0 auto;
+  
+    img {
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  
+    .in {
+      width: rem(510);
+      padding: rem(80);
+      margin: rem(50) auto 0;
+      font-size: rem(16);
+      line-height: rem(30);
+  
+      h3 {
+        font-size: rem(18);
+        line-height: rem(36);
+      }
+    }
+  }
+
+  .ty-years {
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    padding-bottom: rem(0);
+    position: relative;
+
+    .ty-title {
+      margin-bottom: rem(50);
+    }
+  
+    >img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: rem(500);
+    }
+  
+    .in {
+      width: rem(580);
+      position: static;
+      top: auto;
+      left: auto;
+      transform: translateX(0);
+      box-sizing: border-box;
+      padding: rem(30);
+      margin: rem(100) auto 0;
+    }
+  
+    li {
+      box-sizing: border-box;
+      margin-bottom: rem(30);
+      padding-left: rem(30);
+      position: relative;
+  
+      &:hover {
+        border-left: 1px solid rgba(0, 0, 0, .7);
+        h3, .time {
+          font-weight: bold;
+        }
+      }
+  
+      .time {
+        font-size: rem(18);
+        line-height: rem(48);
+        left: rem(30);
+        line-height: rem(20);
+      }
+  
+      h3 {
+        font-size: rem(18);
+        padding-left: rem(134);
+        line-height: rem(32);
+        line-height: rem(20);
+        margin-bottom: rem(6);
+      }
+  
+      p {
+        font-size: rem(14);
+        line-height: rem(22);
+        height: rem(44);
+      }
+    }
+    .ty-more {
+      margin-top: rem(50);
+    }
+    a {
+      display: block;
+      margin: 0 auto
+    }
+  }
+
+  .ty-training {
+    width: 100%;
+    padding: rem(50) 0;
+    height: auto;
+  
+    .swiper-wrapper {
+      padding-top: rem(20);
+    }
+  
+    .ty-title {
+      width: 100%;
+      margin: 0 auto rem(50);
+    }
+  
+    .about-list {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .swiper-slide {
+      width: rem(373);
+      height: rem(358);
+      margin: 0 rem(40) !important;
+      float: left;
+  
+      .index {
+        position: absolute;
+        right: rem(40);
+        bottom: rem(30);
+        font-size: rem(136);
+        line-height: rem(136);
+      }
+  
+      .tag {
+        width: rem(124);
+        height: rem(70);
+        left: rem(36);
+        top: rem(-10);
+        font-size: rem(14);
+        line-height: rem(100);
+      }
+  
+      .ty-more-2 {
+        font-size: rem(14);
+        line-height: rem(18);
+        right: rem(36);
+        top: rem(34);
+      }
+  
+      p {
+        width: rem(300);
+        height: rem(48);
+        font-size: rem(18);
+        line-height: rem(30);
+        height: rem(90);
+        top: rem(110);
+      }
+    }
+  
+    .ty-bolls {
+      margin-top: rem(30);
+    }
+  }
+
+  .carousel {
+    .next-icon, .prev-icon {
+      width: rem(64);
+      height: rem(23);
+      display: block;
+      float: left;
+      background-image: url(../images/left.png);
+      background-size: 100% 100%;
+      margin-left: rem(100);
+      margin-bottom: rem(30);
+    }
+
+    .next-icon {
+      float: right;
+      margin-right: rem(100);
+      background-image: url(../images/right.png);
     }
   }
 }
