@@ -1300,8 +1300,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
         box-shadow: 0px 5px 23px 1px rgba(0, 0, 0, 0.18); }
         .ty-new-list2 .list a:hover .detial h3,
         .ty-new-list3 .list a:hover .detial h3 {
-          font-weight: bold;
-          text-decoration: underline; }
+          color: #063456; }
         .ty-new-list2 .list a:hover img,
         .ty-new-list3 .list a:hover img {
           transform: scale(1.05); }
@@ -1536,8 +1535,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       margin-right: 10px; }
     .ty-recruit p:hover,
     .ty-vocation p:hover {
-      color: #1973C1;
-      font-weight: bold; }
+      color: #1973C1; }
 
 .ty-how-connect {
   border-left: 1px solid #ddd;
@@ -1621,7 +1619,6 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
       border-bottom: 1px solid rgba(0, 0, 0, 0.15);
       transition: all .3s; }
       .ty-sport .main .item:hover {
-        font-weight: bold;
         color: #063456; }
     .ty-sport .main .time {
       font-size: 18px;
