@@ -1797,7 +1797,7 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
   width: 1200px;
   box-sizing: border-box;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-  margin: 0 auto; }
+  margin: 20px auto 0; }
   .ty-report-list ul {
     margin-bottom: 30px; }
   .ty-report-list li {
@@ -2385,12 +2385,18 @@ body .swiper-container-horizontal > .swiper-pagination-bullets .swiper-paginatio
     .ty-banner .nav-list {
       height: 2rem;
       line-height: 2rem;
-      font-size: 1rem; }
+      font-size: 1rem;
+      overflow: scroll;
+      white-space: nowrap; }
       .ty-banner .nav-list span:before {
         width: 0.2rem;
         height: 0.2rem;
         vertical-align: 0.2rem;
         margin: 0 0.5rem 0; }
+      .ty-banner .nav-list span:first-child {
+        padding-left: 0.6rem; }
+      .ty-banner .nav-list span:last-child {
+        padding-right: 0.6rem; }
 
   .ty-title {
     font-size: 2.1rem;
