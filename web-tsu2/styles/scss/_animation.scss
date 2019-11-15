@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.content, .title, .newList,.ts-tit,.school_life_list,.school_life_content, .student_life, footer, .ty-title, .project, .ty-more, .ty-more-1, .ty-more-2, .ty-more-3, .ty-more-4, .ty-banner h2,.nav-list, .points i,.map .student,.dean-img,.dean-say,.ty-general .in,.ty-training .in,.ty-connect img,.ty-connect p,.ty-guidance img,.ty-guidance .r,.ty-recruit, .ty-vocation,.ty-how-connect,.report-in .left,.report-in .right,.report-list,.ty-new-list a,.new-main p,.new-main img,.left-bar .time,.left-bar .share,.ty-new-list2 .list a,.ty-new-list3 .list a,.ty-zs img,.ty-zs .in,.ty-bk img,.ty-bk .in,.ty-download img,.ty-download .in,.ty-sport img,.ty-sport .in,.ty-department-list,.teacher,.set-in .img,.set-in .zy,.ty-ugd-programme img,.ty-pro-list,.ty-ugd-course img{
+	opacity: 1;
+	transition: all .5s;
+	visibility: hidden;
+}
+
+body .an_toTop {
+	opacity: 1 !important;
+	visibility: visible !important;
+	animation: toTop 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
+
+body .an_toBottom {
+	opacity: 1 !important;
+	visibility: visible !important;
+	animation: toBottom 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
+
+body .an_show {
+	opacity: 1 !important;
+	visibility: visible !important;
+	animation: show 0.7s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
+
+body .an_toBig {
+	opacity: 1 !important;
+	visibility: visible !important;
+	animation: big 0.7s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
+
+body .an_toRight {
+	opacity: 1 !important;
+	visibility: visible !important;
+	animation: toRight 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
+
+body .an_toLeft {
+	opacity: 1 !important;
+	visibility: visible !important;
+	animation: toLeft 0.5s linear 0s;
+	animation-fill-mode : both;
+	-webkit-animation-fill-mode: both;
+}
+
+@mixin an_delay($num1,$num2){
+	@for $i from $num1 through $num2{
+		.an_delay#{$i}{ animation-delay: 0.1s*$i; }
+	}
+}
+@include an_delay(1,40);
+
+@keyframes toTop{
+	0%{ transform:translate3d(0px,100px,0); opacity: 0; }
+	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
+}
+
+@keyframes toBottom{
+	0%{ transform:translate3d(0px,-100px,0); opacity: 0; }
+	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
+}
+
+@keyframes toRight{
+	0%{ transform:translate3d(-100px,0px,0); opacity: 0; }
+	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
+}
+
+@keyframes toLeft{
+	0%{ transform:translate3d(100px,0px,0); opacity: 0; }
+	100%{ transform:translate3d(0px,0px,0); opacity: 1;}
+}
+
+@keyframes show{
+	0%{ opacity: 0; }
+	100%{ opacity: 1;}
+}
+
+@keyframes big{
+	0%{ opacity: 0; transform: scale(0.7);}
+	100%{ opacity: 1; transform: scale(1);}
+}
