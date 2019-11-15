@@ -377,96 +377,6 @@ span {
     }
 }
 
-//  内容部分
-.content {
-    margin-top: 66px;
-    padding-top: 10px;
-    height: 276px;
-
-    .content_left {
-        width: 380px;
-        height: 276px;
-        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
-        position: relative;
-        margin-right: 30px;
-        transition: all .5s;
-
-        &:hover {
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        &:last-child {
-            margin-right: 0px;
-        }
-
-        .top {
-            width: 301px;
-            margin: 0 auto;
-            margin-top: 50px;
-            overflow: hidden;
-
-            span:first-child {
-                position: absolute;
-                top: -18px;
-                width:123px;
-                padding-right: 20px;
-                height:38px;
-                background-image: url(../images/icon-2.png);
-                background-size: 100% 100%;
-                font-size:16px;
-                color:rgba(255,255,255,1);
-                line-height:38px;
-                text-align: center;
-            }
-
-            span:last-child {
-                width: 264px;
-                height: 23px;
-                font-size: 24px;
-                color: rgba(6, 52, 86, 1);
-                line-height: 30px;
-                margin-top: 31px;
-                font-weight: bold;
-            }
-        }
-
-        .center {
-            margin-top: 10px;
-            margin-left: 40px;
-            width: 301px;
-            font-size: 12px;
-            font-weight: 400;
-            color: rgba(153, 153, 153, 1);
-            line-height: 22px;
-            overflow: hidden;
-        }
-
-        .bottom {
-            position: absolute;
-            width: 100%;
-            bottom: 33px;
-            left: 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-align: center;
-
-            span {
-                display: inline-block;
-                width: 90px;
-                height: 30px;
-                font-size: 14px;
-                color: rgba(96, 96, 96, 1);
-                line-height: 24px;
-                background: rgba(255, 255, 255, 1);
-                border: 1px solid rgba(221, 221, 221, 1);
-                border-radius: 15px;
-                line-height: 30px;
-                text-align: center;
-                margin: 6px;
-            }
-        }
-    }
-}
 
 // 新闻部分
 .new {
@@ -631,20 +541,12 @@ span {
     }
 
     .newText:nth-child(2) {
-
-        // .left {
-        //   background: url(../images/new_time2.png) no-repeat top left;
-        // }
         .p2 {
             width: 264px;
         }
     }
 
     .newText:nth-child(3) {
-
-        // .left {
-        //   background: url(../images/new_time3.png) no-repeat top left;
-        // }
         .p2 {
             width: 266px;
         }
