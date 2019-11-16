@@ -339,16 +339,6 @@
               font-size: rem(20);
               line-height: rem(24);
             }
-
-            &.l_new {
-              text-align: center;
-              width: rem(80);
-              margin-left: rem(-12);
-              margin-top: rem(40);
-              font-size: rem(16);
-              line-height: 1.5;
-              white-space: nowrap;
-            }
           }
         }
 
@@ -368,131 +358,6 @@
           line-height: rem(32);
         }
       }
-
-      .newText:nth-child(2) {
-        .p2 {
-          width: rem(410);
-        }
-      }
-
-      .newText:nth-child(3) {
-        .p2 {
-          width: rem(410);
-        }
-      }
-    }
-
-    .school_life {
-      margin-top: rem(20);
-      min-width: 100%;
-      height: auto;
-      background-image: url(../images/school_life.png);
-      background-size: auto 100%;
-      overflow: hidden;
-      padding-top: rem(50);
-
-      p:first-child {
-        font-size: 2rem;
-        line-height: 2.4rem;
-        height: auto;
-        font-weight: bold;
-        margin-bottom: rem(40);
-      }
-
-      .school_life_list {
-        width: 100%;
-        text-align: center;
-        margin-bottom: rem(40);
-
-        a {
-          width: rem(180);
-          height: rem(40);
-          font-size: rem(22);
-          line-height: rem(40);
-          background-size: 100% 100%;
-        }
-      }
-
-      .school_life_content {
-        display: none;
-        width: 100%;
-        height: auto;
-
-        .slc_txt {
-          width: rem(520);
-          height: rem(180);
-          display: block;
-          margin: 0 auto;
-          margin-bottom: rem(30);
-          float: none;
-
-          .left {
-            width: rem(80);
-            height: 100%;
-            padding-left: rem(10);
-            margin-right: 0;
-            padding-top: rem(8);
-
-            span {
-              display: inline-block;
-              width: 100%;
-              color: rgba(6, 52, 86, 1);
-              line-height: rem(18);
-              padding-left: rem(5);
-              transition: all .3s;
-
-              &.month {
-                line-height: rem(20);
-              }
-
-              &.day {
-                font-size: rem(26);
-              }
-            }
-          }
-
-          .p1 {
-            padding: 0 0 rem(12) rem(20);
-            font-size: rem(24);
-            line-height: rem(32);
-          }
-
-          .p2 {
-            width: rem(420);
-            padding-left: rem(20);
-            font-size: rem(20);
-            line-height: rem(30);
-          }
-        }
-
-        .slc_txt:first-child {
-          margin-right: auto;
-
-          .p2 {
-            width: rem(420);
-          }
-        }
-      }
-
-      .search {
-        margin: rem(40) 0 rem(50);
-
-        a {
-          display: inline-block;
-          width: 113px;
-          height: 14px;
-          font-size: 14px;
-          font-weight: 400;
-          text-decoration: underline;
-          color: rgba(171, 132, 85, 1);
-          transition: all .3s;
-          white-space: nowrap;
-
-          &:hover {
-            transform: scale(1.2)
-          }
-        }
-      }
     }
 
     .student_life {
@@ -506,20 +371,6 @@
         margin: rem(60) auto 0;
         height: rem(40);
         margin-bottom: rem(70);
-
-        .left {
-          width: rem(64);
-          height: rem(32);
-          margin-left: rem(30);
-          background-size: 100% 100%;
-        }
-
-        .right {
-          width: rem(64);
-          height: rem(32);
-          margin-right: rem(30);
-          background-size: 100% 100%;
-        }
 
         p {
           font-size: 2rem;
@@ -555,7 +406,7 @@
           img {
             display: block;
             width: 100%;
-            height: rem(207);
+            height: rem(220);
           }
 
           .p1 {
@@ -564,18 +415,8 @@
             line-height: rem(20);
             margin-left: rem(28);
             background-repeat: no-repeat;
-
-            span:first-child {
-              font-size: rem(17);
-            }
-
-            span:last-child {
-              font-size: rem(12);
-            }
-
             top: rem(184);
             left: rem(-28);
-            background-size: rem(180) rem(43);
             line-height: rem(43);
             padding-left: rem(28);
           }
@@ -586,22 +427,6 @@
             line-height: rem(24);
             margin-top: rem(76);
             margin-left: rem(65);
-          }
-
-          i {
-            width: rem(31);
-            height: rem(22);
-            background-size: 100% 100%;
-
-            &.left {
-              bottom: rem(124);
-              left: rem(23);
-            }
-
-            &.right {
-              bottom: rem(60);
-              right: rem(40);
-            }
           }
         }
 
@@ -624,26 +449,15 @@
 
           img {
             width: 100%;
-            height: rem(260);
+            height: rem(290);
           }
 
           .p1 {
             width: rem(236);
             height: rem(55);
             margin-left: rem(36);
-
-            span:first-child {
-              font-size: rem(20);
-            }
-
-            span:last-child {
-              font-size: re(16);
-            }
-
             top: rem(240);
             left: rem(-35);
-            background-image: url(../images/studentName_bg1.png);
-            background-size: rem(236) rem(55);
             line-height: rem(55);
             padding-left: rem(36);
           }
@@ -654,21 +468,6 @@
             line-height: rem(30);
             margin-top: rem(78);
             margin-left: rem(90);
-          }
-
-          i {
-            width: rem(47);
-            height: rem(34);
-
-            &.left {
-              bottom: rem(182);
-              left: rem(34);
-            }
-
-            &.right {
-              bottom: rem(68);
-              right: rem(41);
-            }
           }
         }
       }
@@ -789,12 +588,6 @@
       font-size: rem(20);
       left: rem(50);
       bottom: rem(80/1.5);
-
-      &:after {
-        width: rem(211/1.5);
-        height: rem(158/1.5);
-        right: rem(-49/1.5);
-      }
     }
 
     .nav-list {
@@ -851,43 +644,6 @@
 
     &:hover {
       font-size: rem(18);
-    }
-  }
-
-  .ty-more-2 {
-    display: block;
-    width: rem(233);
-    height: rem(74-15);
-    font-size: rem(20);
-    padding-top: rem(15);
-    line-height: rem(62);
-    text-indent: rem(50);
-
-    &:hover {
-      font-size: rem(24);
-    }
-  }
-
-  .ty-more-3 {
-    width: rem(233);
-    height: rem(53);
-    font-size: rem(20);
-    line-height: rem(53);
-
-    &:hover {
-      font-size: rem(24);
-    }
-  }
-
-  .ty-more-4 {
-    width: rem(190);
-    padding-right: rem(32);
-    height: rem(58);
-    line-height: rem(58);
-    font-size: rem(20);
-
-    &:hover {
-      font-size: rem(24);
     }
   }
 
@@ -953,111 +709,6 @@
       }
     }
   }
-
-  .ty-products {
-    padding: rem(80) 0;
-
-    .ty-products-in {
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .ty-title {
-      width: 90%;
-      margin: 0 auto rem(56);
-    }
-
-    .ty-products-con {
-      width: 100%;
-      // padding: 0 10%;
-
-      .products-list {
-        height: 100%;
-      }
-
-      .ty-bolls span {
-        margin: 0 rem(9);
-      }
-
-      .product {
-        width: 80%;
-        margin: 0 10%;
-        box-sizing: border-box;
-        height: auto;
-        padding: rem(60) rem(50) 0;
-        float: none;
-
-        h4 {
-          font-size: rem(24);
-          line-height: rem(36);
-          padding-left: rem(30);
-          height: rem(36);
-          margin-bottom: rem(28);
-
-          &:before {
-            width: rem(28);
-            height: rem(20);
-            top: rem(6);
-          }
-        }
-
-        p {
-          font-size: rem(20);
-          line-height: rem(28);
-          height: rem(28*8);
-        }
-
-        .ty-more {
-          margin: rem(40) 0;
-        }
-      }
-    }
-  }
-
-  .ty-general {
-    padding: rem(70) 0 rem(110);
-
-    .ty-title {
-      margin-bottom: rem(60);
-    }
-
-    .in {
-      width: 100%;
-      height: auto;
-
-      .img{
-        width: 100%;
-        height: auto;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-
-      p {
-        position: relative;
-        width: 90%;
-        height: auto;
-        display: block;
-        margin: -2rem auto 0;
-        box-sizing: border-box;
-        padding: rem(60);
-        font-size: rem(20);
-        line-height: rem(36);
-        height: auto;
-        left: 0%;
-        top: 0%;
-      }
-
-      a {
-        position: absolute;
-        left: rem(0);
-        bottom: -2rem;
-      }
-    }
-  }
-
   .ty-training {
     width: 100%;
     height: auto;
@@ -1134,12 +785,6 @@
 
     h2 {
       bottom: rem(26);
-      right: rem(65);
-
-      &:after {
-        width: rem(167/1.5);
-        height: rem(114/1.5);
-      }
     }
   }
 
@@ -1225,7 +870,6 @@
     }
   }
 
-  .ty-new-list2,
   .ty-new-list3 {
     width: 90%;
     margin: 0 auto;
@@ -1239,13 +883,6 @@
         padding-bottom: rem(40);
         margin-bottom: rem(30);
       }
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      margin: rem(2);
-      float: none;
     }
 
     .time {
@@ -1488,10 +1125,6 @@
 
     div.title {
       margin-bottom: rem(0);
-    }
-
-    .ty-more-3 {
-      margin: rem(15) auto 0;
     }
   }
 

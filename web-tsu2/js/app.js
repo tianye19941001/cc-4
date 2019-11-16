@@ -55,13 +55,6 @@
 			return ""
 		}
 	}
-	$('.school_life_content').eq(0).show()
-
-	$('.school_life_list a').click(function(){
-		var index =  $('.school_life_list a').index($(this));
-		$('.school_life_content').hide().eq(index).slideDown(500);
-		$('.school_life_list a').removeClass('active').eq(index).addClass('active')
-	})
 
 	$('#student-right').click(function(){
 		swiperStudent.slideNext()
@@ -156,9 +149,9 @@
 
 	// 动画
 	function animateInit(){
-		var toTop = '.content,.student_life,footer,.ty-title,.ty-projects .project,.ty-general .in,.report-list,.ty-new-list a,.new-main p,.new-main img,.set-in .zy';
-		var toLeft = '.title,.ts-tit,.school_life_content,.nav-list,.dean-say,.ty-training .in,.ty-connect p,.ty-guidance .r,.ty-recruit,.ty-vocation,.report-in .right,.ty-new-list2 .list a,.ty-new-list3 .list a';
-		var toRight = '.newList,.school_life_list,.ty-more,.ty-more-1,.ty-more-2,.ty-more-3,.ty-more-4,.ty-banner h2,.dean-img,.ty-guidance img,.report-in .left,.left-bar .time,.left-bar .share,.set-in .img,.ty-pro-list';
+		var toTop = '.content,.student_life,footer,.ty-title,.ty-projects .project,.report-list,.ty-new-list a,.new-main p,.new-main img,.set-in .zy';
+		var toLeft = '.title,.ts-tit,.nav-list,.dean-say,.ty-training .in,.ty-connect p,.ty-guidance .r,.ty-recruit,.ty-vocation,.report-in .right,.ty-new-list2 .list a,.ty-new-list3 .list a';
+		var toRight = '.newList,.ty-more,.ty-more-1,.ty-banner h2,.dean-img,.ty-guidance img,.report-in .left,.left-bar .time,.left-bar .share,.set-in .img,.ty-pro-list';
 		var toBottom = '.e,.ty-connect img';
 		var toBig = '.points i,.ty-how-connect,.teacher';
 		addAnimate($(toTop),'an_toTop');

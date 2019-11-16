@@ -196,7 +196,8 @@ span {
         line-height: 42px;
         height: 42px;
         position: relative;
-        background: #063456;
+        background-image: url(../images/bac-top.png);
+        background-size: 100% 100%;
 
         .in {
             width: 1190px;
@@ -265,35 +266,42 @@ span {
             .center {
                 position: absolute;
                 text-align: center;
-                bottom: 86px;
-                left: 50%;
+                bottom: 184px;
+                right: 0;
                 z-index: 9;
-                width: 1045px;
-                height: 80px;
-                background-image: url(../images/swiper_center.png);
-                font-size: 28px;
-                color: rgba(255, 255, 255, 1);
-                line-height: 80px;
-                transform: translateX(-50%);
+                font-size: 36px;
+                width:718px;
+                height:290px;
+                background:rgba(255,255,255,1);
+                opacity:0.8;
+                color: #000;
+                line-height: 60px;
+                border-bottom: 10px solid rgba(162,0,38,1);
+
                 span{
-                    width: 85%;
+                    width: 520px;
                     display: block;
-                    white-space: nowrap;
                     margin: 0 auto;
                     overflow: hidden;
-                    text-overflow: ellipsis;
+                    max-height: 120px;
+                    position: absolute;
+                    top: 50%;
+                    right: 115px;
+                    font-weight: bold;
+                    text-align: left;
+                    transform: translateY(-50%);
                 }
 
                 &:after {
                     content: '';
                     display: block;
                     position: absolute;
-                    width: 256px;
-                    height: 196px;
-                    background-image: url(../images/tip.png);
+                    width: 64px;
+                    height: 23px;
+                    background-image: url(../images/right.png);
                     background-size: 100% 100%;
-                    right: -57px;
-                    top: 0;
+                    right: 125px;
+                    bottom: 50px;
                 }
             }
         }
@@ -352,8 +360,10 @@ span {
 
 // 内容标题
 .title {
+    width: 1200px;
     margin: 66px auto 0;
     height: 36px;
+    position: relative;
 
     .left {
         width: 64px;
@@ -371,9 +381,20 @@ span {
         height: 36px;
         font-size: 36px;
         font-weight: bold;
-        color: rgba(6, 52, 86, 1);
+        color: rgba(52, 52, 52, 1);
         line-height: 18px;
         text-align: center;
+    }
+
+    .txt {
+        font-size: 30px;
+            font-weight: 400;
+            color: rgba(162, 0, 38, 1);
+            line-height: 30px;
+            text-align: center;
+            padding-left: 10px;
+            text-transform: uppercase;
+            font-style: italic;
     }
 }
 
@@ -489,7 +510,7 @@ span {
         .left {
             width: 56px;
             height: 135px;
-            background: url(../images/new_bg2.png) no-repeat top left;
+            background: url(../images/btn-bac2.png) no-repeat top left;
             padding-right: 24px;
             margin-top: 5px;
             text-align: center;
@@ -508,15 +529,6 @@ span {
                     font-size: 20px;
                     line-height: 24px;
                 }
-
-                &.l_new {
-                    margin-top: 29px;
-                    font-size: 12px;
-
-                    font-weight: 400;
-                    color: rgba(5, 51, 85, 1);
-                    line-height: 0px;
-                }
             }
         }
 
@@ -529,241 +541,34 @@ span {
         }
 
         .p2 {
-            width: 261px;
+            width: 272px;
             font-size: 13px;
             color: rgba(154, 154, 154, 1);
             line-height: 22px;
+            float: right;
         }
     }
 
     .newText:last-child {
         margin-right: 0;
     }
-
-    .newText:nth-child(2) {
-        .p2 {
-            width: 264px;
-        }
-    }
-
-    .newText:nth-child(3) {
-        .p2 {
-            width: 266px;
-        }
-    }
-}
-
-// 校园生活
-.school_life {
-    margin-top: 79px;
-    width: 100%;
-    min-width: 1200px;
-    height: 595px;
-    background-image: url(../images/school_life.png);
-    background-size: 100% 100%;
-    padding-top: 87px;
-    box-sizing: border-box;
-
-    p:first-child {
-        height: 34px;
-        font-size: 36px;
-        font-weight: bold;
-        color: rgba(6, 52, 86, 1);
-        line-height: 18px;
-        text-align: center;
-        margin-bottom: 29px;
-
-    }
-
-    .school_life_list {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 79px;
-
-        a {
-            display: inline-block;
-            width: 181px;
-            height: 41px;
-            text-align: center;
-            background-image: url(../images/school_lifeList2.png);
-            font-size: 18px;
-            font-weight: 400;
-            color: rgba(0, 0, 0, 1);
-            line-height: 41px;
-            opacity: 0.8;
-
-            &:hover {
-                font-weight: bold;
-            }
-        }
-
-        a.active {
-            background-image: url(../images/school_lifeList1.png);
-            font-weight: bold;
-            color: rgba(255, 255, 255, 1);
-        }
-    }
-
-    .school_life_content {
-        display: none;
-        width: 100%;
-        height: 161px;
-
-        .slc_txt {
-            width: 353px;
-            height: 100%;
-
-            &:hover {
-                .p1 {
-                    color: #123a58
-                }
-
-                .month,
-                .day {
-                    font-weight: bold
-                }
-            }
-
-            .left {
-                width: 60px;
-                height: 100%;
-                padding-left: 10px;
-                margin-right: 33px;
-                padding-top: 8px;
-                border-right: 1px solid #cccccc;
-                box-sizing: border-box;
-
-                span {
-                    display: inline-block;
-                    width: 100%;
-                    color: rgba(6, 52, 86, 1);
-                    line-height: 18px;
-                    padding-left: 5px;
-                    transition: all .3s;
-
-                    &.month {
-                        line-height: 13px;
-                    }
-
-                    &.day {
-                        font-size: 20px;
-                    }
-                }
-            }
-
-            .p1 {
-                padding-bottom: 11px;
-                font-size: 18px;
-                font-weight: 600;
-                color: rgba(0, 0, 0, 1);
-                line-height: 26px;
-                transition: all .3s;
-            }
-
-            .p2 {
-                width: 249px;
-                font-size: 13px;
-                font-weight: 600;
-                color: rgba(0, 0, 0, 1);
-                line-height: 22px;
-                opacity: 0.6;
-            }
-        }
-
-        .slc_txt:first-child {
-            margin-right: 73px;
-
-            .p2 {
-                width: 250px;
-            }
-        }
-
-        .slc_txt:nth-child(2) {
-            .left .time {
-                background: url(../images/img/MAY31.png) no-repeat top left;
-            }
-        }
-
-        .slc_txt:nth-child(3) {
-            .left .time {
-                background: url(../images/img/jun08.png) no-repeat top left;
-            }
-        }
-    }
-
-    .search {
-        margin-top: 68px;
-        text-align: center;
-
-        a {
-            display: inline-block;
-            width: 113px;
-            height: 14px;
-            font-size: 14px;
-            font-weight: 400;
-            text-decoration: underline;
-            color: rgba(171, 132, 85, 1);
-            transition: all .3s;
-            white-space: nowrap;
-
-            &:hover {
-                transform: scale(1.2)
-            }
-        }
-    }
 }
 
 // 学生风采
 .student_life {
-    width: 1200px;
+    width: 100%;
+    min-width: 1200px;
     margin: 0 auto;
+    height: 923-100px;
+    padding-top: 110px;
+    position: relative;
+    background-image: url(../../images/new/indexbac.png);
+    background-size: auto 100%;
+    background-position: center top;
 
     .title {
-        margin: 100px auto 30px;
-        height: 36px;
-
-        .left {
-            width: 64px;
-            height: 23px;
-            cursor: pointer;
-            background-image: url(../images/left.png);
-            transition: all .3s;
-
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
-
-        .right {
-            width: 64px;
-            height: 25px;
-            cursor: pointer;
-            background-image: url(../images/right.png);
-            transition: all .3s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        p {
-            font-size: 36px;
-
-            font-weight: bold;
-            color: rgba(6, 52, 86, 1);
-            line-height: 0px;
-            text-align: center;
-        }
-
-        .txt {
-            font-size: 16px;
-
-            font-weight: 400;
-            color: rgba(102, 102, 102, 1);
-            line-height: 15px;
-            text-align: center;
-            padding-left: 10px;
-        }
+        margin-top: 0;
+        margin-bottom: 48px;
     }
 
     .student_content {
@@ -772,7 +577,7 @@ span {
         padding: 40px 20px 0;
         margin: 0 auto;
         overflow: hidden;
-        transform: translateX(-80px) scale(.95);
+        transform: scale(.95);
 
         .student_min {
             width: 330px !important;
@@ -800,61 +605,46 @@ span {
             img {
                 display: block;
                 width: 100%;
-                height: 207px;
+                height: 220px;
             }
 
             .p1 {
-                width: 180px;
-                height: 43px;
-
                 color: rgba(255, 255, 255, 1);
-                line-height: 20px;
-                margin-left: 28px;
-
-                span:first-child {
-                    font-size: 17px;
-                }
-
-                span:last-child {
-                    font-size: 12px;
-                }
-
-                position: absolute;
-                top: 184px;
-                left: -28px;
-                background-image: url(../images/studentName_bg1.png);
-                background-size: 180px 43px;
-                line-height: 43px;
-                padding-left: 28px;
-                box-sizing: border-box;
+                margin: 20px auto 12px;
+                width:260px;
+                height:40px;
+                font-size:14px;
+                color:rgba(0,0,0,1);
+                line-height:20px;
             }
 
             .p2 {
-                width: 204px;
-                font-size: 12px;
-                font-weight: 400;
-                color: rgba(151, 151, 151, 1);
-                line-height: 24px;
-                margin-top: 76px;
-                margin-left: 65px;
+                margin: 0 auto;
+                width:260px;
+                height:80px;
+                font-size:12px;
+                color:rgba(115,115,115,1);
+                line-height:20px;
             }
 
-            i {
+            &::after {
+                content: '';
                 position: absolute;
-                width: 31px;
-                height: 22px;
+                width:130px;
+                height:7px;
+                background: rgba(162, 0, 38, 1);
+                display: block;
+                left: 32px;
+                bottom: 0;
+            }
 
-                &.left {
-                    bottom: 124px;
-                    left: 23px;
-                    background-image: url(../images/txt2-icon2.png);
-                }
-
-                &.right {
-                    bottom: 60px;
-                    right: 25px;
-                    background-image: url(../images/txt2-icon.png);
-                }
+            .to {
+                width: 41px;
+                height: 15px;
+                display: block;
+                right: 37px;
+                bottom: 20px;
+                position: absolute;
             }
         }
 
@@ -880,63 +670,51 @@ span {
             img {
                 width: 100%;
                 display: block;
-                height: 260px;
+                height: 290px;
                 margin: 0 auto;
             }
 
             .p1 {
-                width: 236px;
-                height: 55px;
-                color: rgba(255, 255, 255, 1);
-                margin-left: 36px;
-
-                span:first-child {
-                    font-size: 20px;
-                }
-
-                span:last-child {
-                    font-size: 14px;
-                }
-
-                position: absolute;
-                top: 240px;
-                left: -35px;
-                background-image: url(../images/studentName_bg1.png);
-                background-size: 236px 55px;
-                line-height: 55px;
-                padding-left: 36px;
-                box-sizing: border-box;
+                width:340px;
+                height:48px;
+                font-size:18px;
+                font-weight:bold;
+                line-height:24px;
             }
 
-            .p2 {
-                width: 273px;
-                font-size: 16px;
-
-                font-weight: 400;
-                color: rgba(151, 151, 151, 1);
-                line-height: 30px;
-                margin-top: 78px;
-                margin-left: 90px;
+            .p2 {                
+                width:340px;
+                height:24*4px;
+                font-size:14px;
+                line-height:24px;
             }
 
-            i {
-                position: absolute;
-                width: 47px;
-                height: 34px;
+            &::after {
+                width:180px;
+                height:9px;
+                left: 46px;
+            }
 
-                &.left {
-                    bottom: 182px;
-                    left: 34px;
-                    background-image: url(../images/txt-icon2.png);
-                }
-
-                &.right {
-                    bottom: 68px;
-                    right: 41px;
-                    background-image: url(../images/txt-icon.png);
-                }
+            .to {
+                width:51px;
+                height:18px;
+                bottom: 30px;
+                right: 45px;
             }
         }
+    }
+
+    .student-boll {
+        z-index: 5;
+        margin-top: 0;
+    }
+
+    .boll span.swiper-pagination-bullet-active {
+        background: rgba(100, 26, 155, 1) !important;
+    }
+    
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        background: #fff !important;
     }
 }
 
@@ -1093,4 +871,17 @@ footer {
             font-weight: bold
         }
     }
+}
+
+.activity-more {
+    width:80px;
+    height:23px;
+    color:rgba(194,18,27,1);
+    position: absolute;
+    background-image: url(../images/more2.png);
+    background-size: 100% 100%;
+    text-align: left;
+    font-size:14px;
+    right: 20px;
+    top: 20px;
 }

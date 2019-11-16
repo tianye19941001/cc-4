@@ -10,11 +10,11 @@ body {
 }
 
 // 首页补充
-body .swiper-pagination-bullet{
+body .swiper-pagination-bullet {
   opacity: 1;
 }
 
-body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 9px;
 }
 
@@ -24,7 +24,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   margin: 0 auto;
   overflow-x: hidden;
 
-  .ty-title{
+  .ty-title {
     padding-top: 50px;
     margin-bottom: -70px;
   }
@@ -120,29 +120,18 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 
   h2 {
-    width: 337px;
-    height: 74px;
-    line-height: 74px;
-    text-align: center;
-    font-size: 28px;
-    color: rgba(255, 255, 255, 1);
-    background-image: url(../images/new/title.png);
-    background-size: 100% 100%;
+    width: 610px;
+    height: 96px;
+    line-height: 96px;
+    text-align: left;
+    font-size: 30px;
+    color: rgba(52, 52, 52, 1);
     position: absolute;
-    left: 0;
-    bottom: 80px;
-
-    &:after {
-      content: '';
-      width: 211px;
-      height: 158px;
-      display: block;
-      position: absolute;
-      background-image: url(../images/new/title-bottom.png);
-      background-size: 100% 100%;
-      top: 0;
-      right: -49px;
-    }
+    right: 0;
+    bottom: 110px;
+    text-indent: 60px;
+    background-image: url(../../images/second-top.png);
+    background-size: 100% 100%;
   }
 
   .nav-list {
@@ -192,7 +181,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 .ty-title {
   font-size: 42px;
   font-weight: bold;
-  color: rgba(6, 52, 86, 1);
+  color: rgba(52, 52, 52, 1);
   line-height: 80px;
   width: 100%;
   text-align: center;
@@ -264,8 +253,9 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       font-size: 21px;
       color: rgba(63, 63, 63, 1);
 
-      &:hover,&.active {
-        color: #AB8455;
+      &:hover,
+      &.active {
+        color: rgba(162, 0, 38, 1);
         font-weight: bold;
       }
 
@@ -278,73 +268,20 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 .ty-more,
 .ty-more-1 {
+  width:183px;
+  height:57px;
   display: block;
+  margin: 0 auto;
   text-align: center;
-  font-size: 14px;
-  text-decoration: underline;
-  color: rgba(171, 132, 85, 1);
-  line-height: 18px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 57px;
   transition: all .3s;
+  background-image: url(../images/btn-bac.png);
+  background-size: 100% 100%;
 
   &:hover {
     font-size: 18px;
-    font-weight: 600;
-  }
-}
-
-.ty-more-2 {
-  display: block;
-  width: 223px;
-  height: 74-15px;
-  font-size: 21px;
-  color: rgba(255, 255, 255, 1);
-  padding-top: 15px;
-  line-height: 62px;
-  text-align: left;
-  text-indent: 50px;
-  background-image: url(../images/new/bk-bar.png);
-  background-size: 100% 100%;
-  transition: all .3s;
-
-  &:hover {
-    font-size: 24px;
-    font-weight: 600;
-  }
-}
-
-.ty-more-3 {
-  display: block;
-  width: 233px;
-  height: 53px;
-  font-size: 21px;
-  color: rgba(255, 255, 255, 1);
-  line-height: 53px;
-  text-align: center;
-  background-image: url(../images/new/title.png);
-  background-size: 100% 100%;
-  transition: all .3s;
-
-  &:hover {
-    font-size: 24px;
-    font-weight: 600;
-  }
-}
-
-.ty-more-4 {
-  width: 190px;
-  padding-right: 32px;
-  height: 58px;
-  line-height: 58px;
-  display: block;
-  font-size: 21px;
-  color: rgba(255, 255, 255, 1);
-  text-align: center;
-  background-image: url(../images/new/more.png);
-  background-size: 100% 100%;
-  transition: all .3s;
-
-  &:hover {
-    font-size: 24px;
     font-weight: 600;
   }
 }
@@ -383,26 +320,26 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     }
 
     .name {
-      width: 407px;
-      height: 122px;
+      width: 304px;
+      height: 109px;
       position: absolute;
-      bottom: 20px;
-      right: -16px;
-      color: rgba(255, 255, 255, 1);
-      background-image: url(../images/new/xz-bar.png);
+      bottom: 42px;
+      right: -12px;
+      color: #000;
+      background-image: url(../images/say-jiao.png);
       background-size: 100% 100%;
-      text-align: right;
+      text-align: center;
     }
 
     h3 {
       font-size: 24px;
-      padding: 12px 80px 0 0;
+      padding: 16px 20px 0 0;
     }
 
     p {
       font-size: 18px;
       opacity: .7;
-      padding-right: 80px;
+      padding-right: 20px;
     }
   }
 
@@ -414,7 +351,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       font-size: 18px;
       color: rgba(18, 18, 18, 1);
       line-height: 30px;
-      margin-bottom: 30px;
+      text-indent: 36px;
     }
 
     .ty-title {
@@ -426,149 +363,67 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       float: right;
       padding-top: 26px;
       width: 166px;
+      margin-left: 500px;
+    }
+
+    hr {
+      width:166px;
+      height:7px;
+      position: absolute;
+      left: 0;
+      bottom: 100px;
+      background: rgba(162, 0, 38, 1);
+    }
+
+    .write-time {
+      float: right;
+      font-size: 18px;
+      color: rgba(18, 18, 18, 1);
+      float: right;
+      padding-top: 24px;
     }
   }
 }
 
 .ty-products {
-  padding: 80px 0;
-  background: rgba(243, 243, 246, 1);
-
-  .ty-products-in {
-    width: 1190px;
-    margin: 0 auto;
-  }
-
-  .ty-title {
-    margin-bottom: 56px;
-  }
-
-  .ty-products-con {
-    width: 1190px;
-    .products-list {
-      height: 100%;
-    }
-
-    .ty-bolls span{
-      background: rgba(218,215,208,1);
-      opacity: 1;
-      margin: 0 9px;
-    }
-    .ty-bolls .swiper-pagination-bullet-active{
-      background: #063456;
-    }
-
-    .product {
-      width: 373-100px;
-      height: 419-60px;
-      padding: 60px 50px 0;
-      margin-right: 35px;
-      background: rgba(255, 255, 255, 1);
-      float: left;
-      transition: all .3s;
-      
-      &:hover{
-        box-shadow: 0 0 15px rgba(0, 0, 0, .3);
-        h4{font-weight: bold}
-      }
-
-
-      h4 {
-        font-size: 24px;
-        color: rgba(6, 52, 86, 1);
-        line-height: 36px;
-        padding-left: 30px;
-        height: 36px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: left;
-        position: relative;
-        margin-bottom: 28px;
-        transition: all .3s;
-
-        &:before {
-          content: '';
-          display: block;
-          width: 28px;
-          height: 20px;
-          position: absolute;
-          top: 6px;
-          left: 0;
-          background-image: url(../images/new/icon.png);
-          background-size: 100% 100%;
-        }
-      }
-
-      p {
-        font-size: 14px;
-        line-height: 24px;
-        height: 216-24px;
-        overflow: hidden;
-        color: rgba(0, 0, 0, .72);
-      }
-
-      .ty-more {
-        margin-top: 40px;
-      }
-    }
-  }
-}
-
-.ty-general {
   width: 100%;
-  padding: 96px 0 150px;
-  position: relative;
-  overflow: hidden;
+  min-width: 1200px;
+  height: 703px;
+  background-image: url(../images/new/map.png);
+  background-size: auto 100%;
+  background-position: center top;
 
   .ty-title {
-    margin-bottom: 60px;
+    padding: 120px 0 80px;
   }
 
-  .in {
-    width: 1060px;
-    height: 720px;
+  p{
+    width:800px;
     margin: 0 auto;
-    position: relative;
+    font-size:18px;
+    color:rgba(18,18,18,1);
+    line-height:30px;
+    text-indent: 36px;
 
-    .img{
-      width: 100000px;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    img {
-      height: 120%;
+    &:after {
+      content: '';
       display: block;
-    }
-
-    p {
-      width: 496px;
-      background: #fff;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 68px 82px 147px 0;
-      font-size: 18px;
-      color: rgba(18, 18, 18, 1);
-      line-height: 36px;
-    }
-
-    a {
-      position: absolute;
-      left: -15px;
-      bottom: 0;
+      margin: 80px auto 0;
+      width:166px;
+      height:7px;
+      background: rgba(162, 0, 38, 1);
     }
   }
+
 }
 
 .ty-training {
   width: 100%;
-  padding: 130px 0 170px;
-  height: 768-300px;
+  padding: 100px 0 170px;
+  height: 768-270px;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/new/ll.png);
+  background-image: url(../images/new/about-2.png);
   position: relative;
   overflow: hidden;
 
@@ -581,7 +436,6 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 
   .in {
-    width: 712px;
     margin: 0 auto;
     font-size: 18px;
     color: rgba(18, 18, 18, 1);
@@ -590,22 +444,42 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     z-index: 2;
 
     h3 {
-      margin-bottom: 30px;
-    }
-
-    p {
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
 
     a {
       margin: 65px auto 0;
     }
   }
+
+  .text {
+    width:964-200px;
+    height:346-65px;
+    margin: 0 auto;
+    background-image: url(../images/think.png);
+    background-size: 100% 100%;
+    padding: 65px 110px 0 90px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width:166px;
+      height:7px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      position: absolute;
+      background: rgba(162, 0, 38, 1);
+    }
+  }
 }
-.bdsharebuttonbox{
+
+.bdsharebuttonbox {
   display: none;
 }
-.serach-div{
+
+.serach-div {
   width: 1190px;
   margin: 0 auto;
   height: 0;
@@ -628,10 +502,10 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
   .in {
     position: absolute;
-    width: 609px;
-    height: 484px;
-    background: rgba(255, 255, 255, 1);
-    opacity: 0.9;
+    width:677px;
+    height:452px;
+    background-image: url(../images/new/bac-jiao.png);
+    background-size: 100% 100%;
     bottom: -25px;
     left: 50%;
     margin-left: -304.5px;
@@ -652,12 +526,19 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
     a {
       position: absolute;
-      bottom: 70px;
-      left: -14px;
-      width: 526px;
-      background-image: url(../images/new/bk-bar2.png);
+      bottom: 40px;
+      left: 50%;
+      margin-left: -92px;
+      width:183px;
+      height:57px;
+      background-image: url(../../images/btn-bac.png);
+      background-size: 100% 100%;
+      line-height: 57px;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
 
-      &:hover{
+      &:hover {
         font-size: 21px;
       }
     }
@@ -671,20 +552,12 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   h2 {
     bottom: 40px;
     left: auto;
-    right: 65px;
-
-    &:after {
-      width: 167px;
-      height: 114px;
-      background-image: url(../images/new/title-bottom2.png);
-    }
   }
 }
 
 .ty-new-list {
   width: 575+575+50px;
   margin: 0 auto;
-  overflow: hidden;
 
   .list {
     padding: 50px 0;
@@ -694,7 +567,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       @extend .clearfix;
       display: block;
       width: 575-60px;
-      height: 315-80px;
+      height: 165px;
       background: rgba(255, 255, 255, 1);
       margin-left: 50px;
       float: left;
@@ -712,7 +585,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         left: 0;
         width: 576px;
         height: 3px;
-        background: #AB8455;
+        background: rgba(162, 0, 38, 1);
         opacity: 0;
         transform: translateY(50px);
         transition: all .3s;
@@ -732,13 +605,14 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   .time {
     float: left;
     font-size: 12px;
-    color: rgba(6, 52, 86, 1);
+    color: rgba(162, 0, 38, 1);
     line-height: 18px;
     width: 30px;
     text-align: center;
 
     strong {
       display: block;
+      margin-top: 6px;
       font-size: 25px;
     }
   }
@@ -764,8 +638,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       color: rgba(18, 18, 18, 1);
       line-height: 23px;
       opacity: 0.78;
-      height: 23*6px;
-      @extend .six_cut;
+      height: 23*3px;
+      @extend .three_cut;
     }
 
     &:before {
@@ -780,32 +654,31 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       top: 0;
     }
   }
-
-  .ty-more-3{
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 .ty-crumbs {
+  width: 1200px;;
   line-height: 50px;
   font-size: 12px;
-  color: rgba(6, 52, 86, 1);
+  color: rgba(162, 0, 38, 1);
   position: absolute;
+  left: 50%;
+  margin-left: -600px;
   bottom: 0;
-  left: 0;
 
   a {
-    color: rgba(6, 52, 86, 1);
-    &:hover{
+    color: rgba(162, 0, 38, 1);
+
+    &:hover {
       font-weight: bold;
     }
+
     &:after {
       content: '';
       display: inline-block;
       width: 2px;
       height: 2px;
-      background: rgba(6, 52, 86, 1);
+      background: rgba(162, 0, 38, 1);
       opacity: 0.74;
       border-radius: 50%;
       vertical-align: 2px;
@@ -820,7 +693,6 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 }
 
-.ty-new-list2,
 .ty-new-list3 {
   width: 1200px;
   margin: 0 auto;
@@ -845,27 +717,14 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
           font-weight: bold;
           text-decoration: underline;
         }
-
-        img {
-          transform: scale(1.05)
-        }
       }
     }
-  }
-
-  img {
-    width: 420px;
-    height: 265px;
-    margin: 2px;
-    display: block;
-    float: left;
-    transition: all .3s;
   }
 
   .time {
     float: left;
     font-size: 12px;
-    color: rgba(6, 52, 86, 1);
+    color: rgba(162, 0, 38, 1);
     line-height: 18px;
     width: 30px;
     text-align: center;
@@ -951,9 +810,22 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 }
 
+.ty-new-detial .left-bar::after {
+  content: '';
+  display: block;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
 .ty-new-detial {
   width: 1200px;
   margin: 0 auto;
+  padding-top: 30px;
 
   .ty-title {
     font-size: 36px;
@@ -964,11 +836,13 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   .left-bar {
     float: left;
     width: 110px;
+    position: relative;
 
     .time {
-      padding: 24px;
+      padding: 16px 24px;
       display: inline-block;
-      background: rgba(185, 154, 117, 1);
+      background: url(../../images/btn-bac2.png);
+      background-size: 100% 100%;
       color: #fff;
       font-size: 18px;
       text-align: center;
@@ -1025,7 +899,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
         text-align: center;
         transition: all .3s;
 
-        &:hover{
+        &:hover {
           box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         }
       }
@@ -1040,14 +914,16 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     line-height: 30px;
     margin-left: 60px;
 
-    strong,b{
+    strong,
+    b {
       font-weight: bold;
     }
 
-    i,em{
+    i,
+    em {
       font-style: italic
     }
-    
+
     p {
       text-indent: 36px;
       margin-bottom: 30px;
@@ -1072,7 +948,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 // 就业指导
 .ty-guidance {
-  padding: 94px 0 134px;
+  padding: 0 0 134px;
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -1126,6 +1002,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   .ty-title {
     font-size: 30px;
     text-align: left;
+    color: rgba(162, 0, 38, 1);
   }
 
   li {
@@ -1137,14 +1014,15 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
   p {
     span {
-      color: rgba(6, 52, 86, 1);
+      color: rgba(162, 0, 38, 1);
       margin-right: 10px;
     }
+
     transition: all .3s;
     color:rgba(18, 18, 18, 1);
 
-    &:hover{
-      color: rgba(6, 52, 86, 1);
+    &:hover {
+      color: rgba(162, 0, 38, 1);
       font-weight: bold;
     }
   }
@@ -1159,6 +1037,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   .ty-title {
     font-size: 30px;
     text-align: left;
+    color: rgba(162, 0, 38, 1);
   }
 
   font-size:14px;
@@ -1170,7 +1049,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     display: block;
     width: 94px;
     height: 5px;
-    background: rgba(6, 52, 86, 1);
+    background: rgba(162, 0, 38, 1);
     margin-top: 30px;
   }
 
@@ -1227,18 +1106,302 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   div.title {
     margin-bottom: 40px;
   }
-
-  .ty-more-3 {
-    display: block;
-    margin: 55px auto 0;
-  }
 }
 
 // 招生
 
-.add-more{
+.add-more {
   padding-top: 30px;
-  a{
+
+  a {
     margin: 0 auto;
+  }
+}
+
+.index-project {
+  padding: 20px 0 130px;
+}
+
+.project-list {
+  padding-top: 100px;
+  width: 556+556+80px;
+  height: auto;
+  height: 370px;
+  margin: 0 auto;
+  @extend .clearfix;
+
+  li {
+    float: left;
+    margin-right: 80px;
+    width: 556px;
+    height: 370px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .in {
+      position: absolute;
+      width: 215px;
+      padding-left: 5px;
+      height: 280px;
+      left: 0;
+      top: 0;
+      border-bottom: 7px solid #a20026;
+      background: #fff;
+
+
+      h3 {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+        line-height: 26px;
+        margin-bottom: 14px;
+      }
+
+      h4 {
+        display: block;
+        font-size: 24px;
+        font-weight: normal;
+        color: rgba(162, 0, 38, 1);
+        line-height: 24px;
+        margin-bottom: 22px;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+
+      p {
+        width: 180px;
+        height: 21*7px;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 1);
+        line-height: 21px;
+        opacity: 0.7;
+        text-align: justify;
+        overflow: hidden;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 48px;
+        height: 17px;
+        background-size: 100% 100%;
+        background-image: url(../images/right.png);
+        position: absolute;
+        border-bottom: 15px;
+        right: 42px;
+      }
+    }
+  }
+}
+
+// 教学项目
+.project-pic {
+  padding-top: 50px;
+  height: 548px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+
+  .in {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  img {
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: 458px;
+    display: block;
+  }
+
+  .text {
+    position: absolute;
+    left: 564+69px;
+    width: 587-110px;
+    padding-left: 110px;
+    height: 452px;
+    background-image: url(../images/new/bac-jiao.png);
+    background-size: 100% 100%;
+    top: 47px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: rgba(40, 40, 40, 1);
+      line-height: 30px;
+      padding: 56px 0 25px;
+    }
+
+    p {
+      width: 440px;
+      font-size: 14px;
+      color: rgba(115, 115, 115, 1);
+      line-height: 24px;
+      text-indent: 28px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 125px;
+      height: 8px;
+      background: rgba(162, 0, 38, 1);
+      left: 110px;
+      bottom: 50px;
+    }
+  }
+}
+
+.list-project {
+  padding: 38px 0;
+  width: 1200px;
+  margin: 0 auto;
+
+  @extend .clearfix;
+
+  li {
+    display: block;
+    width: 564-100px;
+    height: 126px;
+    background: rgba(243, 243, 246, 1);
+    font-size: 30px;
+    color: rgba(40, 40, 40, 1);
+    line-height: 126px;
+    padding: 0 50px;
+    float: left;
+    margin-right: 72px;
+    position: relative;
+    margin-bottom: 36px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    a {
+      line-height: 32px;
+      position: absolute;
+      width: 350px;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 83px;
+      height: 23px;
+      background-image: url(../images/more2.png);
+      background-size: 100% 100%;
+      top: 52px;
+      right: 50px;
+    }
+  }
+}
+
+.ty-gl {
+  .project-pic {
+    img {
+      left: 458px;
+    }
+
+    .text {
+      right: 564+69px;
+      left: auto;
+      padding-left: 0;
+      padding-right: 110px;
+
+      &:after {
+        left: 0;
+      }
+    }
+  }
+}
+
+.bg-white {
+  background: white !important;
+}
+
+.apply-list {
+  padding-top: 50px;
+
+  width: 1200px;
+  margin: 0 auto;
+  @extend .clearfix;
+
+  >ul>li {
+    width: 388px;
+    margin-right: 18px;
+    float: left;
+
+    img {
+      display: block;
+      width: 388px;
+      height: 254px;
+    }
+
+    .in {
+      width: 360-28px;
+      padding-left: 28px;
+      background-image: url(../images/new/bac-jiao.png);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      top: 208-254px;
+      position: relative;
+      font-size: 18px;
+      color: rgba(18, 18, 18, 1);
+      line-height: 30px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      color: rgba(162, 0, 39, 1);
+      padding: 28px 0;
+    }
+
+    p {
+      width: 300px;
+      padding-left: 28px;
+    }
+
+    ul {
+      box-sizing: border-box;
+      padding-left: 28px;
+    }
+
+    ul,
+    li {
+      list-style: disc;
+    }
+
+
+    &:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      background: rgba(162, 0, 38, 1);
+      width: 130px;
+      height: 7px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

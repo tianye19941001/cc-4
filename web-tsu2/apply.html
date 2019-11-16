@@ -54,16 +54,14 @@
 		</div>
 		<div class="nav_list">
 			<div class="in">
-				<a href="index.html">首页</a>
-				<a href="about.html">关于我们</a>
-				<a href="teachers.html">师资力量</a>
-				<a href="news.html">新闻中心</a>
-				<a href="undergraduate.html">本科教学</a>
-				<a href="school.html">校园生活</a>
-				<a href="practice.html">社会实践</a>
-				<a href="abort.html">国际合作</a>
-				<a href="recruit.html">招生信息</a>
-				<a href="development.html">职业发展</a>
+				<div class="in">
+					<a class="active" href="index.html">首页</a>
+					<a href="project.html">教学项目</a>
+					<a href="apply.html">申报指南</a>
+					<a href="about.html">关于我们</a>
+					<a href="practice.html">项目活动</a>
+					<a href="development.html">职业发展</a>
+				</div>
 				<form class="search-inp" action="">
 					<input type="text" value="" />
 					<i class="close f-ifont">&#xe643;</i>
@@ -75,56 +73,51 @@
 	</nav>
 	<!-- 顶部banner -->
 	<div class="ty-banner">
-		<img class="banner-img" src="./images/new/banner-school.png" alt="">
-		<div class="container-2">
-			<h2>校园生活</h2>
+		<img class="banner-img" src="./images/new/bac-3.png" alt="">
+		<div>
+			<h2>申报指南</h2>
 		</div>
-		<div class="nav-list">
-			<span data-to="student_life">学生风采</span>
-		</div>
+		<div class="nav-list bg-white"></div>
 	</div>
 
-	<!-- 学生风采 -->
-	<section class="student_life ty-school-student">
-		<div class="title clearfix container">
-			<div id="student-left" class="left fl"></div>
-			<div id="student-right" class="right fr"></div>
-			<p>学生风采</p>
-		</div>
-		<div class="student_content container clearfix student-swiper-container">
-			<div class="boll school-boll student-boll"></div>
-			<div class="swiper-wrapper">
-				<div class="student_min fl swiper-slide">
-					<a href="" class="in">
-						<img src="./images/student_name1.png" alt="">
-						<i class="left"></i>
-						<i class="right"></i>
-						<p class="p1"> <span>夏劼斐</span>&nbsp;&nbsp;<span>2014级</span></p>
-						<p class="p2 three_cut">只有用行动热爱真真切切的生活本身，才能创造意义。</p>
-					</a>
-				</div>
-				<div class="student_min fl swiper-slide">
-					<a href="" class="in">
-						<img src="./images/student_name2.png" alt="">
-						<i class="left"></i>
-						<i class="right"></i>
-						<p class="p1"> <span>岳汉超</span>&nbsp;&nbsp;<span>2016级</span></p>
-						<p class="p2 three_cut">我不喜欢循规蹈矩地走商科学生的道路 ，而是更喜欢在时代浪潮下做有意义的和有创造力的事情。</p>
-					</a>
-				</div>
-				<div class="student_min fl swiper-slide">
-					<a href="" class="in">
-						<img src="./images/student_name3.png" alt="">
-						<i class="left"></i>
-						<i class="right"></i>
-						<p class="p1"> <span>张塞</span>&nbsp;&nbsp;<span>2014级</span></p>
-						<p class="p2 three_cut">多尝试，发现自己喜欢的，就朝着这个方向努力。过了高考这个坎，时间不是最重要的因素了，试错的时间是有价值的。</p>
-					</a>
-				</div>
-			</div>
-		</div>
-		<a class="ty-more-3" href="">查看更多</a>
-	</section>
+	<div class="apply-list">
+		<ul>
+			<li>
+				<a href="">
+					<img src="./images/new/apply-1.png" alt="">
+					<div class="in">
+						<h3>申请资格</h3>
+						<ul>
+							<li>具有清华大学学籍的大一、大二全日制在校本科生</li>
+							<li>主修专业学习成绩良好，学有余力</li>
+							<li>已修课程没有不及格科目</li>
+							<li>没有其他辅修或第二学位项目</li>
+						</ul>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="./images/new/apply-2.png" alt="">
+					<div class="in">
+						<h3>申报流程</h3>
+						<p>
+							首先在学校系统报名并以附件形式上传简历、个人自述及电子版成绩单，之后在经管内网上补充填写个人报名信息，注意选择申请专业及是否在经济学及工商管理专业之间接受调剂（金融方向未录取自动转入经济学方向的选录；财务分析与控制方向或商务数据科学方向未录取自动转入工商管理专业的选录）
+						</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="./images/new/apply-3.png" alt="">
+					<div class="in">
+						<h3>招生说明会</h3>
+						<p>为帮助同学们更好地了解第二学位各项目的情况，清华经管学院于每年5月初召开招生说明会对项目培养情况进行介绍。</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
 
 	<!-- 底部 -->
 	<footer>
@@ -156,27 +149,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="./js/swiper.min.js"></script>
 	<script src="js/app.js"></script>
-	<script>
-		var swiperStudent = new Swiper('.student-swiper-container', {
-			pagination: {
-				el: '.student-boll',
-				clickable: true,
-			},
-			grabCursor: true,
-			paginationClickable: true,
-			autoplay: {
-				delay: 3000
-			},
-			slidesPerView: '3',
-			loop: true,
-		});
-
-		$(".student-swiper-container").mouseenter(function () {
-			swiperStudent.autoplay.stop();
-		}).mouseleave(function () {
-			swiperStudent.autoplay.start();
-		});
-	</script>
 </body>
 
 </html>
