@@ -1,2 +1,37 @@
-﻿body,dl,dd,h1,h2,h3,h4,h5,h6,p,form,ul,li{margin:0}ul,input{padding:0}ol,li{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}del,ins{text-decoration:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}input,button,textarea,select{font-size:100%}q:before,q:after{content:""}addr,acronym{border:0;font-variant:normal}sub,sup{font-size:75%;line-height:0;position:relative}sub{top:-0.5em}sup{bottom:-0.25em}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{display:inline-block}* html .clearfix{height:1%}.clearfix{display:block}body{font:12px/1.5 "Arial","\5FAE\8F6F\96C5\9ED1","\5b8b\4f53", sans-serif;color:#000;background:#fff}a{color:#000;text-decoration:none}a:active{color:#df1830}.fb{font-weight:700}.fn{font-weight:400}.unl{text-decoration:underline}.no_unl{text-decoration:none}.tl{text-align:left}.tc{text-align:center}.tr{text-align:right}.bc{margin-left:auto;margin-right:auto}.fl{float:left;display:inline}.fr{float:right;display:inline}.vm{vertical-align:middle}.vt{vertical-align:top}.pr{position:relative}.pa{position:absolute}.abs-right{position:absolute;right:0}.abs-left{position:absolute;left:0}.hidden{visibility:hidden}.none{display:none}.oh{overflow:hidden}body{background-color:#fff;font-family:"微软雅黑"}.index-header{width:30rem;position:relative}.index-header img{display:block;width:100%}.content{padding:1.4rem 0 2.8rem;position:relative}.content::before{content:'';display:block;position:absolute;width:30rem;height:35.68rem;right:0;bottom:0;background-image:url(../images/DW.png);background-size:100% 100%}.content ul{text-align:center;width:24rem;margin:0 auto;position:relative;z-index:3}.content ul li{display:inline-block;width:9.68rem;height:9.68rem;text-align:center;background-color:#fff;box-shadow:.12rem .2rem .28rem 0px rgba(137,125,125,0.26);margin:0 0 2.8rem 0;background-size:100% 100%}.content ul li:nth-child(even){margin-left:2rem}.content ul a{display:block;height:100%}.content ul strong{font-size:1.2rem;color:#000;display:block;margin-bottom:.12rem;padding-top:4.5rem}.content ul span{font-size:.96rem;color:#666;display:block}.content .style-1{background-image:url(../images/ICON-1.png)}.content .style-2{background-image:url(../images/ICON-2.png)}.content .style-3{background-image:url(../images/ICON-3.png)}.content .style-4{background-image:url(../images/ICON-4.png)}.content .style-5{background-image:url(../images/ICON-5.png)}.content .style-6{background-image:url(../images/ICON-6.png)}.content .style-7{background-image:url(../images/ICON-7.png)}.content .style-8{background-image:url(../images/ICON-8.png)}.logo-1,.logo-2{position:absolute;left:1.6rem;top:1.2rem;width:5.92rem}.logo-2{left:8.8rem}
-/*# sourceMappingURL=styles.css.map */
+/*
+Error: Invalid US-ASCII character "\xE7"
+        on line 3 of /Users/paul/workspace/cc-4/web-index/styles/styles.scss
+
+1: <<<<<<< HEAD
+2: @charset "utf-8";
+3: /* svn相对地址 *\/
+4: /* 项目下建立文本或者其他说明 本产品的产品及其对接的相关人员 *\/
+5: @function rem($px){
+6: 	@return $px*(1/25)*1rem;
+7: }
+8: @import "scss/base";
+
+Backtrace:
+/Users/paul/workspace/cc-4/web-index/styles/styles.scss:3
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/util.rb:1048:in `rescue in block in find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/util.rb:1045:in `block in find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/util.rb:1044:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/util.rb:1044:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/util.rb:1044:in `find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/util.rb:772:in `check_sass_encoding'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:444:in `check_encoding!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:400:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:391:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE7\"\A         on line 3 of /Users/paul/workspace/cc-4/web-index/styles/styles.scss\A \A 1: <<<<<<< HEAD\A 2: @charset \"utf-8\";\A 3: /* svn相对地址 */\A 4: /* 项目下建立文本或者其他说明 本产品的产品及其对接的相关人员 */\A 5: @function rem($px){\A 6: 	@return $px*(1/25)*1rem;\A 7: }\A 8: @import \"scss/base\";"; }

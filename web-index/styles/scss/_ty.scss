@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "utf-8";
 
 .oh {
@@ -119,4 +120,115 @@ body {
 
 .logo-2 {
   left: rem(220);
+=======
+@charset "utf-8";
+
+.oh {
+  overflow: hidden;
+}
+
+body {
+  background-color: #fff;
+  font-family: "微软雅黑";
+}
+
+.index-header {
+  width: rem(750);
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.content {
+  padding: rem(35) 0 rem(70);
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: rem(750);
+    height: rem(892);
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/DW.png);
+    background-size: 100% 100%;
+  }
+
+  ul {
+    text-align: center;
+    width: rem(600);
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+
+    li {
+      display: inline-block;
+      width: rem(242);
+      height: rem(242);
+      text-align: center;
+      background-color: #fff;
+      box-shadow: rem(3) rem(5) rem(7) 0px rgba(137, 125, 125, 0.26);
+      margin: 0 0 rem(70) 0;
+      background-size: 100% 100%;
+
+      &:nth-child(even) {
+        margin-left: rem(50);
+      }
+    }
+
+    a {
+      display: block;
+      height: 100%;
+    }
+
+    strong {
+      font-size: rem(30);
+      color: #000;
+      display: block;
+      margin-bottom: rem(3);
+      padding-top: 4.5rem;
+    }
+
+    span {
+      font-size: rem(24);
+      color: #666;
+      display: block;
+    }
+  }
+
+  .style-1 {
+    background-image: url(../images/ICON-1.png);
+  }
+
+  .style-2 {
+    background-image: url(../images/ICON-2.png);
+  }
+
+  .style-3 {
+    background-image: url(../images/ICON-3.png);
+  }
+
+  .style-4 {
+    background-image: url(../images/ICON-4.png);
+  }
+
+  .style-5 {
+    background-image: url(../images/ICON-5.png);
+  }
+
+  .style-6 {
+    background-image: url(../images/ICON-6.png);
+  }
+
+  .style-7 {
+    background-image: url(../images/ICON-7.png);
+  }
+
+  .style-8 {
+    background-image: url(../images/ICON-8.png);
+  }
+>>>>>>> f410ee65735f169ea7d2dea46971cab9201b62de
 }
