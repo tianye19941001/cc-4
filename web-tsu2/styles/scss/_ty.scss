@@ -968,13 +968,15 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 
   .r {
-    padding: 70px;
-    width: 404px;
+    width:587-100px;
+    padding-left: 100px;
+    height:452px;
     position: absolute;
     right: 0;
     top: 50%;
-    background: #fff;
-    margin-top: -220px;
+    margin-top: -230px;
+    background-image: url(../../images/new/bac-jiao.png);
+    background-size: 100% 100%;
 
     h4 {
       font-size: 30px;
@@ -982,6 +984,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       color: rgba(0, 0, 0, 1);
       line-height: 32px;
       margin-bottom: 30px;
+      padding-top: 70px;
     }
 
     p {
@@ -989,6 +992,23 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       color: rgba(18, 18, 18, 1);
       line-height: 30px;
       margin-bottom: 60px;
+      width: 404px;
+    }
+  }
+
+  .ty-more {
+    width:380px;
+    margin: 0;
+
+    &:after {
+      content: '';
+      width:48px;
+      height:17px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 40px;
+      background-image: url(../images/right-2.png);
+      background-size: 100% 100%;
     }
   }
 }
@@ -1060,7 +1080,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     display: inline-block;
     text-align: center;
     font-size: 18px;
-    color: #3C5473;
+    color: rgba(125, 125, 126, 1);
     font-style: normal;
   }
 }
