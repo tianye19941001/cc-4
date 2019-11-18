@@ -102,7 +102,7 @@ span {
                 font-size: 12px;
                 padding: 0 7px 0 1px;
 
-                &:hover{
+                &:hover {
                     opacity: 1;
                 }
             }
@@ -126,9 +126,11 @@ span {
             padding: 0 8px;
             color: rgba(255, 255, 255, 1);
             opacity: 0.7;
-            &:hover{
+
+            &:hover {
                 opacity: 1;
             }
+
             i {
                 font-style: normal;
                 display: inline-block;
@@ -218,7 +220,7 @@ span {
                 color: rgba(171, 132, 85, 1);
             }
 
-            &.active{
+            &.active {
                 background: rgba(171, 132, 85, 1);
                 color: #fff;
             }
@@ -258,7 +260,8 @@ span {
                 height: 100%;
                 transform: translate(-50%, -50%);
                 transition: all .3s;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.05) translate(-50%, -50%);
                 }
             }
@@ -270,15 +273,15 @@ span {
                 right: 0;
                 z-index: 9;
                 font-size: 36px;
-                width:718px;
-                height:290px;
-                background:rgba(255,255,255,1);
-                opacity:0.8;
+                width: 718px;
+                height: 290px;
+                background-image: url(../images/bannar.png);
+                background-size: 100% 100%;
                 color: #000;
                 line-height: 60px;
-                border-bottom: 10px solid rgba(162,0,38,1);
+                border-bottom: 10px solid rgba(162, 0, 38, 1);
 
-                span{
+                span {
                     width: 520px;
                     display: block;
                     margin: 0 auto;
@@ -286,7 +289,7 @@ span {
                     max-height: 120px;
                     position: absolute;
                     top: 50%;
-                    right: 115px;
+                    right: 110px;
                     font-weight: bold;
                     text-align: left;
                     transform: translateY(-50%);
@@ -336,7 +339,8 @@ span {
                 margin: 0 8px;
                 background-color: #fff;
             }
-            .swiper-pagination-bullet-active{
+
+            .swiper-pagination-bullet-active {
                 width: 12px;
                 height: 12px;
                 background: transparent;
@@ -348,14 +352,14 @@ span {
 }
 
 @media screen and (min-width:1921px) and (max-width:3000px) {
-   .carousel{
+    .carousel {
         .swiper-container {
-            .swiper-slide img{
+            .swiper-slide img {
                 width: 100%;
                 height: auto;
             }
         }
-   } 
+    }
 }
 
 // 内容标题
@@ -388,13 +392,14 @@ span {
 
     .txt {
         font-size: 30px;
-            font-weight: 400;
-            color: rgba(162, 0, 38, 1);
-            line-height: 30px;
-            text-align: center;
-            padding-left: 10px;
-            text-transform: uppercase;
-            font-style: italic;
+        font-weight: 400;
+        color: rgba(162, 0, 38, 1);
+        line-height: 30px;
+        text-align: center;
+        padding-left: 10px;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-left: -12px;
     }
 }
 
@@ -562,7 +567,7 @@ span {
     height: 923-100px;
     padding-top: 110px;
     position: relative;
-    background-image: url(../../images/new/indexbac.png);
+    background-image: url(../images/new/indexbac.png);
     background-size: auto 100%;
     background-position: center top;
 
@@ -611,27 +616,27 @@ span {
             .p1 {
                 color: rgba(255, 255, 255, 1);
                 margin: 20px auto 12px;
-                width:260px;
-                height:40px;
-                font-size:14px;
-                color:rgba(0,0,0,1);
-                line-height:20px;
+                width: 260px;
+                height: 40px;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 1);
+                line-height: 20px;
             }
 
             .p2 {
                 margin: 0 auto;
-                width:260px;
-                height:80px;
-                font-size:12px;
-                color:rgba(115,115,115,1);
-                line-height:20px;
+                width: 260px;
+                height: 80px;
+                font-size: 12px;
+                color: rgba(115, 115, 115, 1);
+                line-height: 20px;
             }
 
             &::after {
                 content: '';
                 position: absolute;
-                width:130px;
-                height:7px;
+                width: 130px;
+                height: 7px;
                 background: rgba(162, 0, 38, 1);
                 display: block;
                 left: 32px;
@@ -675,29 +680,29 @@ span {
             }
 
             .p1 {
-                width:340px;
-                height:48px;
-                font-size:18px;
-                font-weight:bold;
-                line-height:24px;
+                width: 340px;
+                height: 48px;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 24px;
             }
 
-            .p2 {                
-                width:340px;
-                height:24*4px;
-                font-size:14px;
-                line-height:24px;
+            .p2 {
+                width: 340px;
+                height: 24*4px;
+                font-size: 14px;
+                line-height: 24px;
             }
 
             &::after {
-                width:180px;
-                height:9px;
+                width: 180px;
+                height: 9px;
                 left: 46px;
             }
 
             .to {
-                width:51px;
-                height:18px;
+                width: 51px;
+                height: 18px;
                 bottom: 30px;
                 right: 45px;
             }
@@ -712,7 +717,7 @@ span {
     .boll span.swiper-pagination-bullet-active {
         background: rgba(100, 26, 155, 1) !important;
     }
-    
+
     .swiper-pagination-clickable .swiper-pagination-bullet {
         background: #fff !important;
     }
@@ -726,7 +731,7 @@ span {
         display: inline-block;
         width: 12px;
         height: 12px;
-        background: rgba(218,215,208,.5);
+        background: rgba(218, 215, 208, .5);
         border-radius: 50%;
         margin: 0 10px !important;
     }
@@ -785,7 +790,7 @@ footer {
                 transition: all .5s;
                 position: relative;
 
-                .socialwraper{
+                .socialwraper {
                     position: absolute;
                     background: #fff;
                     width: 130px;
@@ -796,7 +801,8 @@ footer {
                     border: 1px solid #ccc;
                     display: none;
                     z-index: 1;
-                    i{
+
+                    i {
                         border-color: transparent;
                         border-style: solid;
                         border-width: 10px;
@@ -810,7 +816,8 @@ footer {
                         margin-left: -8px;
                         top: -10px;
                     }
-                    em{
+
+                    em {
                         border-color: transparent;
                         border-style: solid;
                         border-width: 10px;
@@ -823,15 +830,18 @@ footer {
                         left: -10px;
                         top: 1px;
                     }
-                    img{
+
+                    img {
                         width: 100%;
                         height: auto;
                         margin: 0;
                     }
                 }
 
-                &:hover{
-                    .socialwraper{ display: block;}
+                &:hover {
+                    .socialwraper {
+                        display: block;
+                    }
                 }
 
                 &:last-child {
@@ -874,14 +884,14 @@ footer {
 }
 
 .activity-more {
-    width:80px;
-    height:23px;
-    color:rgba(194,18,27,1);
+    width: 80px;
+    height: 23px;
+    color: rgba(194, 18, 27, 1);
     position: absolute;
     background-image: url(../images/more2.png);
     background-size: 100% 100%;
     text-align: left;
-    font-size:14px;
+    font-size: 14px;
     right: 20px;
     top: 20px;
 }

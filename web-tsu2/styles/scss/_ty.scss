@@ -122,7 +122,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   h2 {
     width: 610px;
     height: 96px;
-    line-height: 96px;
+    line-height: 88px;
     text-align: left;
     font-size: 30px;
     color: rgba(52, 52, 52, 1);
@@ -130,7 +130,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     right: 0;
     bottom: 110px;
     text-indent: 60px;
-    background-image: url(../../images/second-top.png);
+    background-image: url(../images/second-top.png);
     background-size: 100% 100%;
   }
 
@@ -268,8 +268,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 .ty-more,
 .ty-more-1 {
-  width:183px;
-  height:57px;
+  width: 183px;
+  height: 57px;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -367,8 +367,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     }
 
     hr {
-      width:166px;
-      height:7px;
+      width: 166px;
+      height: 7px;
       position: absolute;
       left: 0;
       bottom: 100px;
@@ -397,20 +397,20 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     padding: 120px 0 80px;
   }
 
-  p{
-    width:800px;
+  p {
+    width: 800px;
     margin: 0 auto;
-    font-size:18px;
-    color:rgba(18,18,18,1);
-    line-height:30px;
+    font-size: 18px;
+    color: rgba(18, 18, 18, 1);
+    line-height: 30px;
     text-indent: 36px;
 
     &:after {
       content: '';
       display: block;
       margin: 80px auto 0;
-      width:166px;
-      height:7px;
+      width: 166px;
+      height: 7px;
       background: rgba(162, 0, 38, 1);
     }
   }
@@ -453,8 +453,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 
   .text {
-    width:964-200px;
-    height:346-65px;
+    width: 964-200px;
+    height: 346-65px;
     margin: 0 auto;
     background-image: url(../images/think.png);
     background-size: 100% 100%;
@@ -464,8 +464,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     &:after {
       content: '';
       display: block;
-      width:166px;
-      height:7px;
+      width: 166px;
+      height: 7px;
       left: 50%;
       transform: translateX(-50%);
       bottom: 0;
@@ -502,8 +502,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
   .in {
     position: absolute;
-    width:677px;
-    height:452px;
+    width: 677px;
+    height: 452px;
     background-image: url(../images/new/bac-jiao.png);
     background-size: 100% 100%;
     bottom: -25px;
@@ -529,9 +529,9 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
       bottom: 40px;
       left: 50%;
       margin-left: -92px;
-      width:183px;
-      height:57px;
-      background-image: url(../../images/btn-bac.png);
+      width: 183px;
+      height: 57px;
+      background-image: url(../images/btn-bac.png);
       background-size: 100% 100%;
       line-height: 57px;
       color: #fff;
@@ -657,7 +657,8 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 }
 
 .ty-crumbs {
-  width: 1200px;;
+  width: 1200px;
+  ;
   line-height: 50px;
   font-size: 12px;
   color: rgba(162, 0, 38, 1);
@@ -841,7 +842,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     .time {
       padding: 16px 24px;
       display: inline-block;
-      background: url(../../images/btn-bac2.png);
+      background: url(../images/btn-bac2.png);
       background-size: 100% 100%;
       color: #fff;
       font-size: 18px;
@@ -948,7 +949,7 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
 
 // 就业指导
 .ty-guidance {
-  padding: 0 0 134px;
+  padding: 0 0 30px;
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -968,14 +969,14 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 
   .r {
-    width:587-100px;
+    width: 587-100px;
     padding-left: 100px;
-    height:452px;
+    height: 452px;
     position: absolute;
     right: 0;
     top: 50%;
     margin-top: -230px;
-    background-image: url(../../images/new/bac-jiao.png);
+    background-image: url(../images/new/bac-jiao.png);
     background-size: 100% 100%;
 
     h4 {
@@ -997,13 +998,13 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
   }
 
   .ty-more {
-    width:380px;
+    width: 380px;
     margin: 0;
 
     &:after {
       content: '';
-      width:48px;
-      height:17px;
+      width: 48px;
+      height: 17px;
       display: inline-block;
       vertical-align: middle;
       margin-left: 40px;
@@ -1423,5 +1424,83 @@ body .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+.ty-teacher {
+  width: 100%;
+  min-width: 1200px;
+  padding: 110px 0 0;
+  margin: 0 auto;
+
+  .teacher-list {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  ul {
+    @extend .clearfix;
+    height: 760px;
+    padding: 100px 10px 0;
+  }
+
+  li {
+    float: left;
+    width: 260px;
+    height: 348px;
+    padding-right: 230px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-right: 50px;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-left: 144px;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .in {
+    width: 273px;
+    height: 210px;
+    background-image: url(../images/new/bac-jiao.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: 72px;
+
+    h3 {
+      font-size: 18px;
+      color: rgba(162, 0, 38, 1);
+      margin-bottom: 12px;
+      padding: 36px 0 0 60px;
+    }
+
+    p {
+      display: block;
+      height: 24px;
+      font-size: 12px;
+      color: rgba(52, 52, 52, 1);
+      line-height: 24px;
+      padding-left: 60px;
+      opacity: 0.8;
+    }
+  }
+
+  .boll span.swiper-pagination-bullet-active {
+    background: rgba(100, 26, 155, 1) !important;
+  }
+
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    background: #DAD7D0 !important;
   }
 }

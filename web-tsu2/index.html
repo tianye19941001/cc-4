@@ -140,12 +140,11 @@
 		</ul>
 	</section>
 
-	<!-- 学生风采 -->
 	<section class="student_life">
 		<div class="title clearfix container">
 			<p>项目活动</p>
 			<p class="txt one_cut">ACTIVITIES</p>
-			<a class="activity-more" href=""></a>
+			<a class="activity-more" href="practice.html"></a>
 		</div>
 		<div class="student_content clearfix student-swiper-container">
 			<div class="swiper-wrapper">
@@ -179,6 +178,138 @@
 		</div>
 		<div class="boll student-boll"></div>
 	</section>
+
+	<div class="ty-teacher">
+		<div class="title clearfix container">
+			<p>师资力量</p>
+			<p class="txt one_cut">faculty</p>
+			<a class="activity-more" href=""></a>
+		</div>
+
+		<div class="teacher-list">
+			<div class="swiper-container-teachers">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul>
+							<li>
+								<a href="">
+									<img src="./images/new/xz.png" alt="">
+									<div class="in">
+										<h3>白重恩</h3>
+										<p>弗里曼讲席教授</p>
+										<p>经济系 教授</p>
+										<p>清华大学经济管理学院 院长</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="./images/new/xz.png" alt="">
+									<div class="in">
+										<h3>白重恩</h3>
+										<p>弗里曼讲席教授</p>
+										<p>经济系 教授</p>
+										<p>清华大学经济管理学院 院长</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="./images/new/xz.png" alt="">
+									<div class="in">
+										<h3>白重恩</h3>
+										<p>弗里曼讲席教授</p>
+										<p>经济系 教授</p>
+										<p>清华大学经济管理学院 院长</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="./images/new/xz.png" alt="">
+									<div class="in">
+										<h3>白重恩</h3>
+										<p>弗里曼讲席教授</p>
+										<p>经济系 教授</p>
+										<p>清华大学经济管理学院 院长</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide">
+							<ul>
+								<li>
+									<a href="">
+										<img src="./images/new/xz.png" alt="">
+										<div class="in">
+											<h3>白重恩</h3>
+											<p>弗里曼讲席教授</p>
+											<p>经济系 教授</p>
+											<p>清华大学经济管理学院 院长</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="./images/new/xz.png" alt="">
+										<div class="in">
+											<h3>白重恩</h3>
+											<p>弗里曼讲席教授</p>
+											<p>经济系 教授</p>
+											<p>清华大学经济管理学院 院长</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="./images/new/xz.png" alt="">
+										<div class="in">
+											<h3>白重恩</h3>
+											<p>弗里曼讲席教授</p>
+											<p>经济系 教授</p>
+											<p>清华大学经济管理学院 院长</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="./images/new/xz.png" alt="">
+										<div class="in">
+											<h3>白重恩</h3>
+											<p>弗里曼讲席教授</p>
+											<p>经济系 教授</p>
+											<p>清华大学经济管理学院 院长</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide">
+							<ul>
+								<li>
+									<a href="">
+										<img src="./images/new/xz.png" alt="">
+										<div class="in">
+											<h3>白重恩</h3>
+											<p>弗里曼讲席教授</p>
+											<p>经济系 教授</p>
+											<p>清华大学经济管理学院 院长</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boll teacher-boll"></div>
+		</div>
+	</div>
+
 	<!-- 底部 -->
 	<footer>
 		<div class="container">
@@ -261,6 +392,27 @@
 			swiperStudent.autoplay.stop();
 		}).mouseleave(function () {
 			swiperStudent.autoplay.start();
+		});
+
+		var swiperTeacher = new Swiper('.swiper-container-teachers', {
+			pagination: {
+				el: '.teacher-boll',
+				clickable: true,
+			},
+			loop: true,
+			grabCursor: true,
+			paginationClickable: true,
+			autoplayDisableOnInteraction: false,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false
+			}
+		})
+
+		$(".swiper-container-teachers").mouseenter(function () {
+			swiperTeacher.autoplay.stop();
+		}).mouseleave(function () {
+			swiperTeacher.autoplay.start();
 		});
 	</script>
 </body>
