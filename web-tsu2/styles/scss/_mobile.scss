@@ -8,14 +8,19 @@
   body {
     padding-top: rem(80);
     min-width: 100% !important;
-    .pc{
+
+    .pc {
       display: none;
     }
 
-    .serach-div{display: none;}
-    .news-detail .container-2{
+    .serach-div {
+      display: none;
+    }
+
+    .news-detail .container-2 {
       height: auto;
     }
+
     .container {
       width: 100%;
     }
@@ -171,15 +176,19 @@
             color: rgba(255, 255, 255, 1);
             line-height: rem(36);
             padding: rem(10) rem(12);
+            left: 50%;
             transform: translateX(-50%);
             background: rgba(171, 132, 85, .8);
+            border-bottom: 0;
 
             &:after {
               display: none;
             }
 
             span {
+              position: static;
               width: 100%;
+              transform: translateY(0);
             }
           }
         }
@@ -235,6 +244,10 @@
         height: auto;
         font-size: rem(40);
         line-height: rem(48);
+      }
+
+      .txt {
+        font-size: rem(24);
       }
     }
 
@@ -362,15 +375,19 @@
 
     .student_life {
       width: 100%;
+      min-width: 0;
+      height: rem(850);
+      padding-top: rem(30);
+      overflow: hidden;
 
       .boll {
         margin-top: rem(0);
       }
 
       .title {
-        margin: rem(60) auto 0;
+        margin: rem(40) auto 0;
         height: rem(40);
-        margin-bottom: rem(70);
+        margin-bottom: rem(40);
 
         p {
           font-size: 2rem;
@@ -410,23 +427,32 @@
           }
 
           .p1 {
-            width: rem(180);
-            height: rem(44);
+            margin: rem(20) auto rem(12);
+            width: rem(260);
+            height: rem(40);
+            font-size: rem(14);
             line-height: rem(20);
-            margin-left: rem(28);
-            background-repeat: no-repeat;
-            top: rem(184);
-            left: rem(-28);
-            line-height: rem(43);
-            padding-left: rem(28);
           }
 
           .p2 {
-            width: rem(204);
-            font-size: rem(16);
-            line-height: rem(24);
-            margin-top: rem(76);
-            margin-left: rem(65);
+            width: rem(260);
+            height: rem(80);
+            font-size: rem(12);
+            line-height: rem(20);
+          }
+
+          &::after {
+            width: rem(130);
+            height: rem(7);
+            left: rem(32);
+            bottom: 0;
+          }
+
+          .to {
+            width: rem(41);
+            height: rem(15);
+            right: rem(37);
+            bottom: rem(20);
           }
         }
 
@@ -453,21 +479,17 @@
           }
 
           .p1 {
-            width: rem(236);
-            height: rem(55);
-            margin-left: rem(36);
-            top: rem(240);
-            left: rem(-35);
-            line-height: rem(55);
-            padding-left: rem(36);
+            width: rem(340);
+            height: rem(48);
+            font-size: rem(18);
+            line-height: rem(24);
           }
 
           .p2 {
-            width: rem(273);
-            font-size: rem(16);
-            line-height: rem(30);
-            margin-top: rem(78);
-            margin-left: rem(90);
+            width: rem(340);
+            height: rem(96);
+            font-size: rem(14);
+            line-height: rem(24);
           }
         }
       }
@@ -510,7 +532,7 @@
           text-align: center;
           padding-bottom: 0;
 
-          &:hover{
+          &:hover {
             padding-bottom: 140px;
           }
 
@@ -586,8 +608,7 @@
       height: rem(74/1.5);
       line-height: rem(74/1.5);
       font-size: rem(20);
-      left: rem(50);
-      bottom: rem(80/1.5);
+      bottom: rem(80/1.4);
     }
 
     .nav-list {
@@ -640,7 +661,9 @@
   .ty-more,
   .ty-more-1 {
     font-size: rem(16);
-    line-height: rem(20);
+    width: rem(200);
+        height: rem(60);
+        line-height: rem(60);
 
     &:hover {
       font-size: rem(18);
@@ -709,9 +732,10 @@
       }
     }
   }
+
   .ty-training {
     width: 100%;
-    height: auto;
+    height: rem(600);
     padding: rem(80) 0;
 
     img {
@@ -733,6 +757,16 @@
 
       a {
         margin: rem(65) auto 0;
+      }
+    }
+    .text {
+      width: rem(764/1.7);
+      height: auto;
+      padding: rem(65/1.7) rem(110/1.7) rem(10/1.7) rem(90/1.7);
+  
+      &:after {
+        width: rem(166);
+        height: rem(7);
       }
     }
   }
@@ -768,8 +802,10 @@
 
       a {
         position: static;
-        margin-left: rem(-11);
-        width: rem(526);
+        margin: rem(30) auto;
+        width: rem(200);
+        height: rem(60);
+        line-height: rem(60);
 
         &:hover {
           font-size: rem(21);
@@ -933,6 +969,7 @@
   .ty-new-detial {
     width: 90%;
     margin: 0 auto;
+    padding-top: 0;
 
     .ty-title {
       padding: rem(40) 0;
@@ -1009,7 +1046,7 @@
   }
 
   .ty-guidance {
-    padding: rem(80) 0;
+    padding: 0;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -1029,25 +1066,35 @@
     }
 
     .r {
-      padding: rem(40);
+      padding: rem(50) rem(80) 0;
       box-sizing: border-box;
-      width: 90%;
       position: static;
       margin: rem(-220) auto 0;
+      width: rem(540);
+      height: rem(450);
 
       h4 {
         font-size: rem(30);
         line-height: rem(32);
         margin-bottom: rem(30);
+        padding-top: rem(0);
       }
-
+  
       p {
         font-size: rem(18);
         line-height: rem(30);
         margin-bottom: rem(60);
+        width: 100%;
       }
-
-      a {
+    }
+    .ty-more {
+      width: rem(380);
+      margin: 0;
+  
+      &:after {
+        width: rem(48);
+        height: rem(17);
+        margin-left: rem(40);
       }
     }
   }
@@ -1128,9 +1175,302 @@
     }
   }
 
-  .add-more{
+  .add-more {
     padding-top: rem(0);
     padding-bottom: rem(20);
   }
 
+  // new
+  .project-list {
+    padding-top: rem(100);
+    width: 100%;
+    height: auto;
+
+    li {
+      float: none;
+      margin: 0 auto rem(40);
+      width: rem(556);
+      height: rem(370);
+      position: relative;
+
+      &:last-child {
+        margin: 0 auto;
+      }
+
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+      .in {
+        width: rem(215);
+        padding-left: rem(5);
+        height: rem(280);
+        border-bottom: rem(7) solid #a20026;
+
+        h3 {
+          font-size: rem(24);
+          line-height: rem(26);
+          margin-bottom: rem(14);
+        }
+
+        h4 {
+          font-size: rem(24);
+          line-height: rem(24);
+          margin-bottom: rem(22);
+        }
+
+        p {
+          width: rem(180);
+          height: rem(147);
+          font-size: rem(13);
+          line-height: rem(21);
+        }
+
+        &:after {
+          width: rem(48);
+          height: rem(17);
+          border-bottom: rem(15);
+          right: rem(42);
+        }
+      }
+    }
+  }
+  .activity-more {
+    width: rem(80);
+    height: rem(23);
+    font-size: rem(14);
+    right: rem(20);
+    top: rem(20);
+  }
+
+  .ty-teacher {
+    width: 100%;
+    min-width: 0;
+    padding: rem(80) 0 0;
+    margin: 0 auto;
+  
+    .teacher-list {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+  
+    ul {
+      height: 100%;
+      padding: rem(80) rem(15) 0;
+    }
+  
+    li {
+      float: left;
+      width: rem(260/1.7);
+      height: rem(348/1.7);
+      padding-right: rem(230/1.7);
+      margin-bottom: rem(60/1.7);
+      margin-right: rem(25/1.7);
+  
+      &:nth-child(3) {
+        margin-left: rem(0);
+      }
+    }
+  
+    .in {
+      width: rem(273/1.7);
+      height: rem(210/1.7);
+      top: rem(72/1.7);
+  
+      h3 {
+        font-size: rem(18/1.7);
+        margin-bottom: rem(12/1.7);
+        padding: rem(36/1.7) 0 0 rem(60/1.7);
+      }
+  
+      p {
+        height: rem(24/1.7);
+        font-size: rem(12/1.7);
+        line-height: rem(24/1.7);
+        padding-left: rem(60/1.7);
+      }
+    }
+  }
+
+  .project-pic {
+    padding-top: rem(50);
+    height: auto;
+    width: 100%;
+    overflow: visible;
+  
+    .in {
+      width: 100%;
+      height: rem(650);
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      position: static;
+    }
+  
+    .text {
+      position: absolute;
+      left: rem(10);
+      width: rem(587-110);
+      padding-left: rem(110);
+      height: rem(452);
+      top: rem(200);
+  
+      h3 {
+        font-size: rem(24);
+        line-height: rem(30);
+        padding: rem(56) 0 rem(25);
+      }
+  
+      p {
+        width: rem(440);
+        font-size: rem(14);
+        line-height: rem(24);
+        text-indent: rem(28);
+      }
+  
+      &:after {
+        width: rem(125);
+        height: rem(8);
+        left: rem(110);
+        bottom: rem(50);
+      }
+    }
+  }
+
+  .list-project {
+    padding: rem(38) 0;
+    width: 100%;
+    margin: 0 auto;
+  
+    li {
+      display: block;
+      width: rem(540);
+      height: rem(126);
+      font-size: rem(20);
+      line-height: rem(126);
+      padding: 0 rem(50);
+      margin: 0 auto rem(20);
+  
+      &:nth-child(even) {
+        margin: 0 auto;
+      }
+  
+      a {
+        line-height: rem(32);
+        width: rem(350);
+      }
+  
+      &:after {
+        width: rem(83);
+        height: rem(23);
+        top: rem(52);
+        right: rem(50);
+      }
+    }
+  }
+
+  .ty-gl {
+    .project-pic {
+      img {
+        left: 458px;
+      }
+  
+      .text {
+        right: auto;
+        left: rem(10);
+        padding-left: rem(110);
+        padding-right: 0;
+  
+        &:after {
+          left: rem(110);
+        }
+      }
+    }
+  }
+
+  .apply-list {
+    padding-top: rem(50);
+  
+    width: 100%;
+    margin: 0 auto;
+  
+    >ul>li {
+      width: rem(388*1.5);
+      margin: 0 auto rem(30);
+      float: none;
+  
+      img {
+        width: rem(388*1.5);
+        height: rem(254*1.5);
+      }
+  
+      .in {
+        width: rem(332*1.5);
+        padding-left: rem(28*1.5);
+        top: rem(-46*1.5);
+        font-size: rem(18*1.5);
+        line-height: rem(45);
+      }
+  
+      h3 {
+        font-size: rem(45);
+        padding: rem(28*1.5) 0;
+      }
+  
+      p {
+        width: rem(450);
+        padding-left: rem(28*1.5);
+      }
+  
+      ul {
+        padding-left: rem(28*1.5);
+      }
+  
+      &:after {
+        width: rem(120*1.5);
+        height: rem(7*1.5);
+      }
+
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+  }
+
+  .ty-dean .dean-say hr {
+    width: rem(166);
+    height: rem(7);
+  }
+
+  .ty-products {
+    width: 100%;
+    min-width: 0;
+    height: rem(700);
+  
+    .ty-title {
+      padding: rem(80) 0;
+    }
+  
+    p {
+      width: rem(560);
+      font-size: rem(18);
+      line-height: rem(30);
+      text-indent: rem(36);
+  
+      &:after {
+        margin: rem(80) auto 0;
+        width: rem(166);
+        height: rem(7);
+      }
+    }
+  }
+
+  .index-project {
+    padding: rem(20) 0 rem(80);
+  }
 }
