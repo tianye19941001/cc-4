@@ -480,15 +480,15 @@
 
           .p1 {
             width: rem(340);
-            height: rem(48);
-            font-size: rem(18);
-            line-height: rem(24);
+            height: rem(60);
+            font-size: rem(22);
+            line-height: rem(30);
           }
 
           .p2 {
             width: rem(340);
             height: rem(96);
-            font-size: rem(14);
+            font-size: rem(18);
             line-height: rem(24);
           }
         }
@@ -1223,9 +1223,10 @@
 
         p {
           width: rem(180);
-          height: rem(147);
-          font-size: rem(13);
-          line-height: rem(21);
+          height: rem(150);
+          margin-bottom: rem(10);
+          font-size: rem(18);
+          line-height: rem(30);
         }
 
         &:after {
@@ -1277,19 +1278,19 @@
   
     .in {
       width: rem(273/1.7);
-      height: rem(210/1.7);
-      top: rem(72/1.7);
+      height: rem(250/1.7);
+      top: rem(52/1.7);
   
       h3 {
-        font-size: rem(18/1.7);
+        font-size: rem(18);
         margin-bottom: rem(12/1.7);
-        padding: rem(36/1.7) 0 0 rem(60/1.7);
+        padding: rem(12) 0 0 rem(60/1.7);
       }
   
       p {
-        height: rem(24/1.7);
-        font-size: rem(12/1.7);
-        line-height: rem(24/1.7);
+        height: rem(20);
+        font-size: rem(14);
+        line-height: rem(20);
         padding-left: rem(60/1.7);
       }
     }
@@ -1303,7 +1304,7 @@
   
     .in {
       width: 100%;
-      height: rem(650);
+      height: auto;
     }
   
     img {
@@ -1313,12 +1314,14 @@
     }
   
     .text {
-      position: absolute;
-      left: rem(10);
+      position: relative;
+      left: 1.5rem;
       width: rem(587-110);
-      padding-left: rem(110);
-      height: rem(452);
-      top: rem(200);
+      padding-left: rem(80);
+      padding-bottom: rem(80);
+      height: auto;
+      top: 0;
+      margin: rem(-100) 0 0;
   
       h3 {
         font-size: rem(24);
@@ -1328,8 +1331,8 @@
   
       p {
         width: rem(440);
-        font-size: rem(14);
-        line-height: rem(24);
+        font-size: rem(18);
+        line-height: rem(26);
         text-indent: rem(28);
       }
   
@@ -1337,7 +1340,7 @@
         width: rem(125);
         height: rem(8);
         left: rem(110);
-        bottom: rem(50);
+        bottom: rem(40);
       }
     }
   }
@@ -1357,7 +1360,7 @@
       margin: 0 auto rem(20);
   
       &:nth-child(even) {
-        margin: 0 auto;
+        margin: 0 auto rem(20);
       }
   
       a {
@@ -1382,8 +1385,8 @@
   
       .text {
         right: auto;
-        left: rem(10);
-        padding-left: rem(110);
+        left: 1.5rem;
+        padding-left: rem(80);
         padding-right: 0;
   
         &:after {

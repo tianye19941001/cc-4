@@ -149,9 +149,9 @@
 
 	// 动画
 	function animateInit(){
-		var toTop = '.content,.student_life,footer,.ty-title,.ty-projects .project,.report-list,.ty-new-list a,.new-main p,.new-main img,.set-in .zy';
-		var toLeft = '.title,.ts-tit,.nav-list,.dean-say,.ty-training .in,.ty-connect p,.ty-guidance .r,.ty-recruit,.ty-vocation,.report-in .right,.ty-new-list2 .list a,.ty-new-list3 .list a';
-		var toRight = '.newList,.ty-more,.ty-more-1,.ty-banner h2,.dean-img,.ty-guidance img,.report-in .left,.left-bar .time,.left-bar .share,.set-in .img,.ty-pro-list';
+		var toTop = '.content,.student_life,footer,.ty-title,.ty-projects .project,.report-list,.ty-new-list a,.new-main p,.new-main img,.set-in .zy, .apply-list .in';
+		var toLeft = '.title,.ts-tit,.nav-list,.dean-say,.ty-training .in,.ty-connect p,.ty-guidance .r,.ty-recruit,.ty-vocation,.report-in .right,.ty-new-list2 .list a,.ty-new-list3 .list a, .project-pic img';
+		var toRight = '.newList,.ty-more,.ty-more-1,.ty-banner h2,.dean-img,.ty-guidance img,.report-in .left,.left-bar .time,.left-bar .share,.set-in .img,.ty-pro-list,.project-list li, .project-pic .text, .apply-list img';
 		var toBottom = '.e,.ty-connect img';
 		var toBig = '.points i,.ty-how-connect,.teacher';
 		addAnimate($(toTop),'an_toTop');
