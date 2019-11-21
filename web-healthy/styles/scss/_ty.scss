@@ -644,7 +644,8 @@ body {
 
             &.active {
                 background: rgba(144, 246, 197, .4);
-                i{
+
+                i {
                     opacity: .7;
                 }
             }
@@ -652,7 +653,7 @@ body {
             &:last-child {
                 margin-bottom: 0;
             }
-            
+
             em {
                 display: block;
                 float: right;
@@ -701,7 +702,8 @@ body {
             em {
                 color: #F28C83;
             }
-            i{
+
+            i {
                 background-image: url(../images/zong-jian.png);
             }
         }
@@ -726,4 +728,427 @@ body {
             }
         }
     }
+}
+
+.third-header {
+    margin-bottom: rem(60);
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .back img {
+        width: rem(100);
+        position: absolute;
+        top: rem(100);
+        left: 0;
+    }
+
+    h3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: rem(60);
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 0 0 rem(10) #b8903b;
+        position: absolute;
+        top: rem(150);
+        left: 0;
+    }
+
+    p {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: rem(240);
+        letter-spacing: rem(2);
+        left: 0;
+        font-size: rem(33);
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.get-res {
+    width: rem(660);
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 0px rem(30) rem(19) rem(1) rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: rem(20);
+    border-radius: rem(30);
+    margin-bottom: rem(80);
+    background: #fff;
+
+    .in {
+        box-sizing: border-box;
+        border: rem(10) solid #789ecf;
+        border-radius: rem(30);
+        padding: rem(20) rem(40);
+    }
+
+    .p1 {
+        font-size: rem(32);
+        color: rgba(89, 87, 87, 1);
+        margin-bottom: rem(30);
+    }
+
+    strong {
+        display: block;
+        margin-bottom: rem(30);
+        font-size: rem(54);
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 0 rem(10) #0862b0;
+    }
+
+    .p2 {
+        font-size: rem(28);
+        color: rgba(137, 137, 137, 1);
+        line-height: rem(34);
+    }
+
+    .in.red {
+        border-color: #eac4a8;
+
+        strong {
+            text-shadow: 0 0 rem(10) #dc6203;
+        }
+    }
+}
+
+.report-div {
+    width: rem(660);
+    box-shadow: 0px rem(20) rem(19) rem(1) rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: rem(30);
+    margin: 0 auto rem(80);
+    overflow: hidden;
+    background: #fff;
+}
+
+.report-title {
+    background: linear-gradient(to right, rgba(239, 181, 25, .2) 50%, #fff);
+    height: rem(73);
+    line-height: rem(73);
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: rem(80);
+
+    i {
+        display: inline-block;
+        width: rem(42);
+        height: rem(42);
+        vertical-align: middle;
+        background-size: 100% 100%;
+    }
+
+    span {
+        font-size: rem(40);
+        color: rgba(159, 160, 160, 1);
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: rem(20);
+    }
+
+    em {
+        font-size: rem(20);
+        color: rgba(159, 160, 160, 1);
+        display: inline-block;
+        vertical-align: rem(-10);
+        margin-left: rem(6);
+    }
+}
+
+.sport-text {
+    display: block;
+    width: rem(560);
+    font-size: rem(30);
+    color: rgba(159, 160, 160, 1);
+    line-height: rem(45);
+    margin: 0 auto;
+    padding: rem(30) 0;
+
+    p {
+        margin-bottom: rem(24);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.report-div-2 {
+    margin-bottom: rem(10);
+}
+
+.report-title-2 {
+    font-size: rem(30);
+    color: rgba(159, 160, 160, 1);
+    line-height: rem(47);
+    padding-left: rem(90);
+}
+
+.sport-text-2 {
+    @extend .sport-text;
+    font-size: rem(22);
+}
+
+.btn {
+    width: rem(660);
+    height: rem(100);
+    line-height: rem(100);
+    font-size: rem(46);
+    color: rgba(159, 160, 160, 1);
+    display: block;
+    margin: 0 auto rem(50);
+    background: linear-gradient(to right, #f4e6ad, #edc98f);
+    border-radius: rem(25);
+    text-align: center;
+    box-shadow: 0px 0.6666666667rem 0.6333333333rem 0.0333333333rem rgba(0, 0, 0, 0.15);
+}
+
+.sport-table {
+    width: rem(135+150+68+142);
+    margin: 0 auto;
+    padding: rem(15) 0 rem(30);
+
+    .tr {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+
+        &:first-child {
+            line-height: rem(50);
+            height: rem(50);
+        }
+    }
+
+    .th {
+
+        span {
+            height: rem(28);
+            line-height: rem(28);
+            display: inline-block;
+            padding: 0 rem(12);
+            font-size: rem(20);
+            border-radius: rem(12);
+            color: #fff;
+            background: #f6be8b;
+        }
+
+    }
+
+    .th,
+    .td {
+        float: left;
+        display: block;
+        font-size: rem(19);
+        color: rgba(137, 137, 137, 1);
+        line-height: rem(35);
+
+        &:first-child {
+            width: rem(135);
+        }
+
+        &:nth-child(2) {
+            width: rem(150);
+        }
+
+        &:nth-child(3) {
+            width: rem(68);
+        }
+
+        &:nth-child(4) {
+            width: rem(140);
+        }
+    }
+
+    .red {
+        color: rgba(211, 96, 73, 1);
+    }
+}
+
+.third-header-2 {
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    h3 {
+        display: block;
+        position: absolute;
+        font-size: rem(76);
+        color: rgba(255, 255, 255, 1);
+        left: rem(150);
+        top: rem(160);
+    }
+
+    p {
+        font-size: rem(44);
+        color: rgba(255, 255, 255, 1);
+        display: block;
+        position: absolute;
+        left: rem(150);
+        top: rem(270);
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width:rem(14);
+        height:rem(142);
+        position: absolute;
+        top: rem(177);
+        left: rem(122);
+        background-image: url(../images/疾病风险切图/2red-line.png);
+        background-size: 100% 100%;
+        z-index: 3;
+        opacity: .6;
+    }
+}
+
+.third-data {
+    .data-pic {
+        width:rem(105);
+        height:rem(400);
+
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.style-green {
+    .report-title {
+        background: linear-gradient(to right, rgba(76, 201, 152, .2) 50%, #fff);
+    }
+
+    .sport-table .th span {
+        background: #b4d5cc;
+    }
+
+    .btn {
+        color: #fff;
+        background: linear-gradient(to right, #8fd480, #5aa14b);
+    }
+
+    .third-header h3 {
+        text-shadow: 0 0 0.3333333333rem #006e2f;
+    }
+}
+
+.style-blue {
+    background-image: url(../images/2blue-bg.png);
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    .report-title {
+        background: linear-gradient(to right, rgba(89, 194, 255, .3) 50%, #fff);
+    }
+
+    .sport-table .th span {
+        background: #83a0ea;
+    }
+
+    .btn {
+        color: #fff;
+        background: linear-gradient(to right, #0197da, #033f74);
+    }
+}
+
+.style-red {
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/2blue-bg.png);
+
+    .report-title {
+        background: linear-gradient(to right, rgba(231, 31, 25, .2) 50%, #fff);
+    }
+
+    .sport-table .th span {
+        background: #fb9895;
+    }
+
+    .btn {
+        color: #fff;
+        background: linear-gradient(to right, #f6722b, #f6a960);
+    }
+}
+
+.about-yellow {
+    background-image: url(../images/单基因切图/2-1icon1.png);
+}
+
+.know-yellow {
+    background-image: url(../images/单基因切图/2-1icon2.png);
+}
+
+.site-yellow {
+    background-image: url(../images/单基因切图/2-1icon3.png);
+}
+
+.slove-yellow {
+    background-image: url(../images/单基因切图/2-1icon4.png);
+}
+
+.about-green {
+    background-image: url(../images/安全切图/1icon1.png);
+}
+
+.know-green {
+    background-image: url(../images/安全切图/1icon2.png);
+}
+
+.site-green {
+    background-image: url(../images/安全切图/1icon3.png);
+}
+
+.slove-green {
+    background-image: url(../images/安全切图/1icon4.png);
+}
+
+
+.about-blue {
+    background-image: url(../images/疾病风险切图/2blue-icon1.png);
+}
+
+.factor-blue {
+    background-image: url(../images/疾病风险切图/2blue-icon2.png);
+}
+
+.advice-blue {
+    background-image: url(../images/疾病风险切图/2blue-icon3.png);
+}
+
+.site-blue {
+    background-image: url(../images/疾病风险切图/2blue-icon4.png);
+}
+
+.basic-blue {
+    background-image: url(../images/疾病风险切图/2blue-icon5.png);
+}
+
+.about-red {
+    background-image: url(../images/疾病风险切图/2red-icon1.png);
+}
+
+.factor-red {
+    background-image: url(../images/疾病风险切图/2red-icon2.png);
+}
+
+.advice-red {
+    background-image: url(../images/疾病风险切图/2red-icon3.png);
+}
+
+.site-red {
+    background-image: url(../images/疾病风险切图/2red-icon4.png);
+}
+
+.basic-red {
+    background-image: url(../images/疾病风险切图/2red-icon5.png);
 }
