@@ -997,8 +997,8 @@ body {
     &::after {
         content: '';
         display: block;
-        width:rem(14);
-        height:rem(142);
+        width: rem(14);
+        height: rem(142);
         position: absolute;
         top: rem(177);
         left: rem(122);
@@ -1006,18 +1006,6 @@ body {
         background-size: 100% 100%;
         z-index: 3;
         opacity: .6;
-    }
-}
-
-.third-data {
-    .data-pic {
-        width:rem(105);
-        height:rem(400);
-
-        img{
-            display: block;
-            width: 100%;
-        }
     }
 }
 
@@ -1151,4 +1139,138 @@ body {
 
 .basic-red {
     background-image: url(../images/疾病风险切图/2red-icon5.png);
+}
+
+.line-con {
+    padding-top: rem(12);
+    overflow: hidden;
+
+    .num-data {
+        float: left;
+        padding-left: rem(150);
+
+        li {
+            display: block;
+            font-size: rem(17);
+            line-height: 1;
+            color: rgba(159, 160, 160, 1);
+            margin-bottom: rem(70);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .data-pic {
+        background: #e2e3e3;
+        border-radius: rem(20);
+        overflow: hidden;
+        float: left;
+        margin-left: rem(30);
+        width: rem(105);
+        height: rem(400);
+        box-shadow: inset 0 0 rem(20) rgba(0, 0, 0, .5);
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: rem(4);
+            margin-top: rem(-2);
+            width: 100%;
+            background: #f48a00;
+            z-index: 9;
+        }
+
+        em {
+            display: block;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: rem(100);
+                height: 10000px;
+                background-image: url(../images/zhu-line-1.png);
+                background-size: 100% auto;
+                background-position: center rem(100);
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 3;
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            font-size: rem(40);
+            color: rgba(255, 255, 255, 1);
+            z-index: 5;
+        }
+    }
+}
+
+.third-data {
+    padding-bottom: rem(110);
+
+    strong {
+        display: block;
+        position: absolute;
+        left: rem(387);
+        top: rem(685);
+        font-size: rem(62);
+        color: #f1652d;
+
+        span {
+            font-size: rem(82);
+        }
+    }
+
+    .big {
+        position: absolute;
+        left: rem(387);
+        top: rem(810);
+        font-size: rem(66);
+        color: rgba(159, 160, 160, 1);
+    }
+
+    .en {
+        position: absolute;
+        left: rem(387);
+        top: rem(900);
+        font-size: rem(42);
+        color: rgba(159, 160, 160, 1);
+    }
+}
+
+.style-blue {
+    
+    .third-data {
+        .data-pic {
+            em:after {
+                background-image: url(../images/zhu-line-2.png);
+            }
+        }
+    }
+
+    strong {
+        color: rgba(18, 35, 94, 1);
+    };
 }

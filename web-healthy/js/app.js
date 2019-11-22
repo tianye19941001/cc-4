@@ -43,4 +43,38 @@
  			};
  		})
  	}
+
+ 	$('.index-header .menu').click(function () {
+ 		$(this).find('ul').toggle()
+ 	})
+
+ 	$('.list-all .left li, .medication .left li').click(function () {
+ 		var index = $(this).parents('.left').find('li').index($(this));
+
+ 		$('.show-detial').addClass('active');
+ 		$('.search-detial').removeClass('active');
+ 		$(this).parents('.left').find('li').removeClass('active').eq(index).addClass('active');
+ 		$(this).parents('.left').siblings('.right-detial').eq(0).find('.right').removeClass('active').eq(index).addClass('active')
+ 	})
+
+ 	$('#search-btn').click(function () {
+ 		var text = $('#search-text').val();
+
+ 		if (!text) {
+ 			$('.show-detial').addClass('active');
+ 			$('.search-detial').removeClass('active');
+		} else {
+			$('.search-detial').addClass('active');
+			$('.show-detial').removeClass('active');
+			 
+			$('.search-detial ul').html('');
+			var list = $('.list-all .show-detial li');
+			list.each(function(){
+				var inText = $(this).text();
+				if(inText.indexOf(text) >= 0) {
+					$('.search-detial ul').append($(this).clone())
+				}
+			})
+		}
+ 	})
  });
