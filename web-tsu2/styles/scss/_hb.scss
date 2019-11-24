@@ -217,23 +217,14 @@ span {
             padding: 0 20px;
 
             &:hover {
-                color: rgba(171, 132, 85, 1);
+                background: #791173;
+                color: #fff;
             }
 
             &.active {
-                background: rgba(171, 132, 85, 1);
+                background: #791173;
                 color: #fff;
             }
-        }
-
-        em {
-            position: absolute;
-            width: 70px;
-            height: 3px;
-            left: 10px;
-            bottom: 0px;
-            background: rgba(171, 132, 85, 1);
-            transition: all .5s;
         }
     }
 }
@@ -593,6 +584,7 @@ span {
             margin-top: 58px;
             width: 330px;
             height: 421px;
+            overflow: hidden;
             box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.07);
             background: #fff;
             position: relative;
@@ -611,6 +603,11 @@ span {
                 display: block;
                 width: 100%;
                 height: 220px;
+                transition: all .3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
 
             .p1 {

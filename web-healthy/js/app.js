@@ -76,5 +76,16 @@
 				}
 			})
 		}
- 	})
+	 })
+	 
+	 var lineData = $('.third-data');
+	 if(lineData.length > 0) {
+		var ttdta = $('.third-data strong span').text()
+		if(ttdta >= 4) {
+			ttdta = 4;
+		}
+
+		var percent = 100-ttdta/4*100 + '%';
+		$('.data-pic em').css({'top': percent})
+	 }
  });

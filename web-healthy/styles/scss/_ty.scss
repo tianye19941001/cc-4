@@ -1154,7 +1154,7 @@ body {
             font-size: rem(17);
             line-height: 1;
             color: rgba(159, 160, 160, 1);
-            margin-bottom: rem(70);
+            margin-bottom: rem(80);
 
             &:last-child {
                 margin-bottom: 0;
@@ -1177,9 +1177,9 @@ body {
             content: '';
             position: absolute;
             left: 0;
-            top: 50%;
+            top: 75%;
             height: rem(4);
-            margin-top: rem(-2);
+            margin-top: rem(-4);
             width: 100%;
             background: #f48a00;
             z-index: 9;
