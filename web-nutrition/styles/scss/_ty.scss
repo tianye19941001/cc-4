@@ -10,6 +10,7 @@ body {
     padding-bottom: rem(100);
 }
 
+
 .index-header {
     img {
         width: 100%;
@@ -130,6 +131,7 @@ body {
     background: #fe9366;
     font-size: rem(32);
     font-weight: bold;
+    z-index: 9;
 
     a {
         display: block;
@@ -197,6 +199,7 @@ body {
         }
 
         &.blue {
+
             span,
             em {
                 color: rgba(51, 161, 228, 1);
@@ -204,10 +207,82 @@ body {
         }
 
         &.green {
+
             span,
             em {
                 color: rgba(44, 189, 65, 1);
             }
         }
     }
+}
+
+.products-list {
+    @extend .clearfix;
+    width: rem(602);
+    display: block;
+    margin: 0 auto;
+
+    li {
+        float: left;
+        width: rem(290);
+        height: rem(290);
+        background: rgba(255, 246, 240, 1);
+        box-shadow: 0px rem(2) rem(2) 0px rgba(9, 2, 4, 0.1);
+        border-radius: rem(10);
+        margin-right: rem(20);
+        margin-bottom: rem(30);
+        position: relative;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    h3 {
+        width: rem(250);
+        display: block;
+        margin: 0 auto;
+        font-size: rem(22);
+        color: rgba(254, 147, 102, 1);
+        line-height: rem(28);
+        height: rem(56);
+        overflow: hidden;
+        padding: rem(12) 0;
+        overflow: hidden;
+    }
+
+    .img {
+        width: rem(120);
+        height: rem(200);
+        padding: 0 rem(12);
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3D(-50%, -50%, 0);
+        max-width: rem(120);
+        max-height: rem(195);
+    }
+
+    .p1, .p2 {
+        position: absolute;
+        width: rem(130);
+        font-size: rem(18);
+        line-height: rem(24);
+        height: rem(24*4);
+        overflow: hidden;
+        top: rem(120);
+        right: rem(10);
+        color: rgba(100, 100, 100, 1);
+    }
+    .p2 {
+        top: rem(120+24*4);
+    }
+}
+
+.report-res {
+    margin-top: rem(-40);
 }
