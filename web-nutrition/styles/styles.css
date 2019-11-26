@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* svn相对地址 */
+/* 项目下建立文本或者其他说明 本产品的产品及其对接的相关人员 */
+/**
+* Description: Base style 
+* Developers: zhiwen <zhiwen@leju.sina.com.cn>
+**/
+/*RESET
+-------------------------------------------------------------- */
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form, ul, li {
+  margin: 0; }
+
+ul, input {
+  padding: 0; }
+
+ol, li {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+del, ins {
+  text-decoration: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+input, button, textarea, select {
+  font-size: 100%; }
+
+q:before, q:after {
+  content: ""; }
+
+addr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sub {
+  top: -0.5em; }
+
+sup {
+  bottom: -0.25em; }
+
+/*CLEARFIX
+-------------------------------------------------------------- */
+.clearfix:after, .food-list:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix, .food-list {
+  display: inline-block; }
+
+* html .clearfix, * html .food-list {
+  height: 1%; }
+
+.clearfix, .food-list {
+  display: block; }
+
+/*FONT
+-------------------------------------------------------------- */
+body {
+  font: 12px/1.5 "Arial","\5FAE\8F6F\96C5\9ED1","\5b8b\4f53", sans-serif;
+  color: #000;
+  background: #fff; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+a:active {
+  color: #df1830; }
+
+.fb {
+  font-weight: 700; }
+
+.fn {
+  font-weight: 400; }
+
+.unl {
+  text-decoration: underline; }
+
+.no_unl {
+  text-decoration: none; }
+
+/*POSITION
+-------------------------------------------------------------- */
+.tl {
+  text-align: left !important; }
+
+.tc {
+  text-align: center; }
+
+.tr {
+  text-align: right; }
+
+.bc {
+  margin-left: auto;
+  margin-right: auto; }
+
+.fl {
+  float: left;
+  display: inline; }
+
+.fr {
+  float: right;
+  display: inline; }
+
+.vm {
+  vertical-align: middle; }
+
+.vt {
+  vertical-align: top; }
+
+.pr {
+  position: relative; }
+
+.pa {
+  position: absolute; }
+
+.abs-right {
+  position: absolute;
+  right: 0; }
+
+.abs-left {
+  position: absolute;
+  left: 0; }
+
+.hidden {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.oh {
+  overflow: hidden; }
+
+body {
+  background-color: #f0f0f0;
+  font-family: "微软雅黑";
+  padding-bottom: 3.3333333333rem; }
+
+.index-header img {
+  width: 100%;
+  display: block; }
+.index-header h1 {
+  position: absolute;
+  left: 1.5333333333rem;
+  top: 3.6666666667rem;
+  text-align: center;
+  font-size: 1.8333333333rem;
+  font-weight: bold;
+  color: #4aa4dd; }
+
+.report-header img {
+  width: 100%;
+  display: block; }
+.report-header h1 {
+  position: absolute;
+  top: 3.3333333333rem;
+  left: 1.6666666667rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f67ea3;
+  background: linear-gradient(-90deg, #3aa8ee 0.9765625%, #2b8cdb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.report-div {
+  width: 22.3333333333rem;
+  background: white;
+  box-shadow: 0px 0.1333333333rem 0.3333333333rem 0px rgba(115, 115, 115, 0.1);
+  border-radius: 0.6666666667rem;
+  margin: 0 auto 1rem;
+  position: relative;
+  z-index: 2; }
+  .report-div p {
+    display: block;
+    margin: 0 auto 0.4rem;
+    width: 20rem;
+    font-size: 0.8666666667rem;
+    color: black;
+    line-height: 1.2rem; }
+  .report-div .sport-text img {
+    width: 60%;
+    margin: 0.3333333333rem auto;
+    display: block; }
+  .report-div .color-self {
+    color: #fe9366; }
+  .report-div .color-gray {
+    color: #353535; }
+
+.report-title {
+  height: 2.6666666667rem;
+  line-height: 2.6666666667rem;
+  padding: 0 1rem;
+  background: linear-gradient(150deg, rgba(123, 204, 255, 0.15) 0%, rgba(155, 240, 255, 0.15) 100%);
+  border-radius: 0.6666666667rem 0.6666666667rem 0 0;
+  position: relative;
+  margin-bottom: 1rem; }
+  .report-title span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #010101;
+    background: linear-gradient(-90deg, #3aa8ee 0.9765625%, #2b8cdb 100%);
+    -webkit-background-clip: text;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent; }
+
+.nutrition-report .report-header h1 {
+  background: linear-gradient(-90deg, #d86d3c 0%, #ff7f46 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+.nutrition-report .report-title {
+  background: linear-gradient(-90deg, rgba(255, 192, 162, 0.1) 0%, rgba(255, 165, 123, 0.1) 100%); }
+  .nutrition-report .report-title span {
+    background: linear-gradient(-90deg, #ffa57b 0%, #ff7f46 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.footer-tab {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  background: #fe9366;
+  font-size: 1.0666666667rem;
+  font-weight: bold; }
+  .footer-tab a {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 2.2rem;
+    text-align: center;
+    color: #fff; }
+    .footer-tab a:last-child {
+      background: #fff;
+      color: #f67f46; }
+
+.food-list {
+  padding-top: 0.6666666667rem;
+  width: 20.4rem;
+  margin: 0 auto; }
+  .food-list li {
+    float: left;
+    width: 6.3333333333rem;
+    height: 3.3333333333rem;
+    background: #fff6f0;
+    box-shadow: 0px 0.0666666667rem 0.0666666667rem 0px rgba(9, 2, 4, 0.1);
+    border-radius: 1.6666666667rem;
+    position: relative;
+    margin: 0 0.6666666667rem 0.8666666667rem 0; }
+    .food-list li:nth-child(3n) {
+      margin-right: 0; }
+    .food-list li img {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      left: 0;
+      top: 0.1666666667rem; }
+    .food-list li span {
+      display: block;
+      position: absolute;
+      top: 0.8rem;
+      right: 0.1666666667rem;
+      width: 3.3333333333rem;
+      font-size: 0.6666666667rem;
+      color: #fe9366;
+      text-align: center; }
+    .food-list li em {
+      display: block;
+      position: absolute;
+      top: 2rem;
+      right: 0.1666666667rem;
+      width: 3.3333333333rem;
+      font-size: 0.4666666667rem;
+      color: #fe9366;
+      text-align: center; }
+    .food-list li.blue span,
+    .food-list li.blue em {
+      color: #33a1e4; }
+    .food-list li.green span,
+    .food-list li.green em {
+      color: #2cbd41; }
+
+/*# sourceMappingURL=styles.css.map */
