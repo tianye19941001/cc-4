@@ -20,7 +20,7 @@ function Welcome(props) {
     return <h1>hello,{props.name}</h1>;
 }
 
-function Welcome2 extends React.Component{
+class Welcome2 extends React.Component{
     render() {
         return<h1>hello-components2,{this.props.name}</h1>
     }
@@ -33,21 +33,21 @@ const ReactDOM = {
     }
 }
 
-ReactDOM.render = {
+ReactDOM.render (
     <div>
         <Welcome name="tianye1"/>
         <Welcome name="tianye2"/>
         <Welcome2 name="tianye3"/>
     </div>,
-    document.getElementById('root');
-}
+    document.getElementById('root')
+)
 
 class Counter extends React.Component {
     constructor(props) {
-        supe(props);
+        super(props);
 
         this.state = {
-            num = 0
+            num : 0
         }
     }
 
@@ -61,7 +61,7 @@ class Counter extends React.Component {
 
     onClick() {
         this.setState({
-            num: this.state.num ++
+            num: this.state.num + 1
         })
     }
 
@@ -75,25 +75,25 @@ class Counter extends React.Component {
     }
 }
 
-React.render(
+ReactDOM.render(
     <Counter />,
     document.getElementById('main')
 )
 
 //test diff
 
-// var d1 = (
-//     <div>
-//         <h1>123</h1>
-//         <span>r</span>
-//     </div>
-// )
-// var d2 = (
-//     <div>
-//         <h1>456</h1>
-//         <p>r</p>
-//     </div>
-// )
+var d1 = (
+    <div>
+        <h1>123</h1>
+        <span>r</span>
+    </div>
+)
+var d2 = (
+    <div>
+        <h1>456</h1>
+        <p>r</p>
+    </div>
+)
 
-// var a = diff(d1,d2)
+var a = diff(d1,d2)
 // console.log(a)
