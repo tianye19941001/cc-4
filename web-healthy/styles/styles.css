@@ -1144,14 +1144,56 @@ ul {
     line-height: 1.1666666667rem; }
     .sport-table .th:first-child,
     .sport-table .td:first-child {
-      width: 5.6666666667rem; }
+      width: 4.5rem; }
     .sport-table .th:nth-child(2),
     .sport-table .td:nth-child(2) {
-      width: 6.5rem; }
+      width: 5rem; }
     .sport-table .th:nth-child(3),
     .sport-table .td:nth-child(3) {
-      width: 3.7666666667rem; }
+      width: 2.2666666667rem; }
+    .sport-table .th:nth-child(4),
+    .sport-table .td:nth-child(4) {
+      width: 4.6666666667rem; }
   .sport-table .red {
+    color: #d36049; }
+
+.sport-table.special {
+  width: 16.5rem;
+  margin: 0 auto;
+  padding: 0.5rem 0 1rem; }
+  .sport-table.special .tr {
+    width: 100%;
+    overflow: hidden;
+    text-align: center; }
+    .sport-table.special .tr:first-child {
+      line-height: 1.6666666667rem;
+      height: 1.6666666667rem; }
+  .sport-table.special .th span {
+    height: 0.9333333333rem;
+    line-height: 0.9333333333rem;
+    display: inline-block;
+    padding: 0 0.4rem;
+    font-size: 0.6666666667rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: #f6be8b; }
+  .sport-table.special .th,
+  .sport-table.special .td {
+    float: left;
+    display: block;
+    font-size: 0.6333333333rem;
+    color: #898989;
+    line-height: 1.1666666667rem; }
+    .sport-table.special .th:first-child,
+    .sport-table.special .td:first-child {
+      width: 5.6666666667rem; }
+    .sport-table.special .th:nth-child(2),
+    .sport-table.special .td:nth-child(2) {
+      width: 6.5rem; }
+    .sport-table.special .th:nth-child(3),
+    .sport-table.special .td:nth-child(3) {
+      width: 3.7666666667rem; }
+  .sport-table.special .red {
     color: #d36049; }
 
 .third-header-2 img {

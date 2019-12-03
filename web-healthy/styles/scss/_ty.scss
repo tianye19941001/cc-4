@@ -955,6 +955,67 @@ ul {
         line-height: rem(35);
 
         &:first-child {
+            width: rem(135);
+        }
+
+        &:nth-child(2) {
+            width: rem(150);
+        }
+
+        &:nth-child(3) {
+            width: rem(68);
+        }
+
+        &:nth-child(4) {
+            width: rem(140);
+        }
+    }
+
+    .red {
+        color: rgba(211, 96, 73, 1);
+    }
+}
+
+.sport-table.special {
+    width: rem(135+150+68+142);
+    margin: 0 auto;
+    padding: rem(15) 0 rem(30);
+
+    .tr {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+
+        &:first-child {
+            line-height: rem(50);
+            height: rem(50);
+        }
+    }
+
+    .th {
+
+        span {
+            height: rem(28);
+            line-height: rem(28);
+            display: inline-block;
+            padding: 0 rem(12);
+            font-size: rem(20);
+            border-radius: rem(12);
+            color: #fff;
+            background: #f6be8b;
+        }
+
+    }
+
+    .th,
+    .td {
+        float: left;
+        display: block;
+        font-size: rem(19);
+        color: rgba(137, 137, 137, 1);
+        line-height: rem(35);
+
+        &:first-child {
             width: rem(170);
         }
 
