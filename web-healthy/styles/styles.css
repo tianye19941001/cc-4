@@ -613,8 +613,7 @@ ul {
   left: 0;
   top: 3.3333333333rem;
   width: 3.6666666667rem;
-  height: 1.6666666667rem;
-  box-shadow: 0px 0.1rem 0.2333333333rem 0px rgba(4, 0, 0, 0.13); }
+  height: 1.6666666667rem; }
 .second-header h2 {
   display: block;
   position: absolute;
@@ -1058,7 +1057,7 @@ ul {
   line-height: 2.4333333333rem;
   width: 100%;
   box-sizing: border-box;
-  padding-left: 2.6666666667rem; }
+  padding-left: 1.6666666667rem; }
   .report-title i {
     display: inline-block;
     width: 1.4rem;
@@ -1178,8 +1177,7 @@ ul {
   left: 0;
   top: 3.3333333333rem;
   width: 3.6666666667rem;
-  height: 1.6666666667rem;
-  box-shadow: 0px 0.1rem 0.2333333333rem 0px rgba(4, 0, 0, 0.13); }
+  height: 1.6666666667rem; }
 .third-header-2::after {
   content: '';
   display: block;
