@@ -17,6 +17,10 @@ body {
     padding-bottom: rem(40);
 }
 
+ul {
+    -webkit-overflow-scrolling:touch
+}
+
 .index-header {
     position: relative;
 
@@ -254,14 +258,20 @@ body {
     }
 
     .list-points {
-        width: rem(200);
-        line-height: rem(25+56);
+        width: rem(210);
+        line-height: rem(25+55);
         font-size: rem(26);
         color: rgba(255, 255, 255, 1);
         position: absolute;
-        top: rem(409);
+        top: rem(408);
         left: rem(440);
         text-align: center;
+        overflow: hidden;
+
+        li {
+            height: rem(25+55);
+            overflow: hidden;
+        }
     }
 }
 
@@ -322,7 +332,7 @@ body {
     }
 
     .left {
-        width: 21.333%;
+        width: 30%;
         float: left;
 
         li {
@@ -331,19 +341,17 @@ body {
             color: rgba(35, 24, 21, .8);
             line-height: rem(62);
             overflow: hidden;
-            padding: 0 rem(20);
+            padding: 0 rem(16);
         }
 
         .active {
             background: #fff;
         }
-
-
     }
 
     .right-detial {
         background: #fff;
-        width: 78.666%;
+        width: 69.999%;
         float: left;
         display: none;
 
@@ -361,17 +369,16 @@ body {
 
         ul {
             max-height: rem(72*12);
-            min-height: rem(72*6);
             overflow-y: scroll;
         }
 
         li {
-            width: rem(500);
+            width: rem(450);
             line-height: rem(72);
             border-bottom: 1px solid rgba(0, 0, 0, .1);
             white-space: nowrap;
             padding-left: rem(27);
-            margin-left: rem(13);
+            margin-left: rem(18);
             font-size: rem(24);
             color: rgba(35, 24, 21, 1);
             overflow: hidden;
@@ -390,7 +397,7 @@ body {
 
             strong {
                 float: left;
-                width: rem(400);
+                width: rem(350);
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -988,6 +995,16 @@ body {
         position: absolute;
         left: rem(150);
         top: rem(270);
+    }
+
+    .back img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: rem(100);
+        width: rem(110);
+        height: rem(50);
+        box-shadow: 0px rem(3) rem(7) 0px rgba(4, 0, 0, 0.13);
     }
 
     &::after {
