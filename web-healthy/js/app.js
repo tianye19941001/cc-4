@@ -63,29 +63,39 @@
  		if (!text) {
  			$('.show-detial').addClass('active');
  			$('.search-detial').removeClass('active');
-		} else {
-			$('.search-detial').addClass('active');
-			$('.show-detial').removeClass('active');
-			 
-			$('.search-detial ul').html('');
-			var list = $('.list-all .show-detial li');
-			list.each(function(){
-				var inText = $(this).text();
-				if(inText.indexOf(text) >= 0) {
-					$('.search-detial ul').append($(this).clone())
-				}
-			})
-		}
-	 })
-	 
-	 var lineData = $('.third-data');
-	 if(lineData.length > 0) {
-		var ttdta = $('.third-data strong span').text()
-		if(ttdta >= 4) {
-			ttdta = 4;
-		}
+ 		} else {
+ 			$('.search-detial').addClass('active');
+ 			$('.show-detial').removeClass('active');
 
-		var percent = 100-ttdta/4*100 + '%';
-		$('.data-pic em').css({'top': percent})
-	 }
+ 			$('.search-detial ul').html('');
+ 			var list = $('.list-all .show-detial li');
+ 			list.each(function () {
+ 				var inText = $(this).text();
+ 				if (inText.indexOf(text) >= 0) {
+ 					$('.search-detial ul').append($(this).clone())
+ 				}
+ 			})
+ 		}
+ 	})
+
+ 	var lineData = $('.third-data');
+ 	if (lineData.length > 0) {
+ 		var ttdta = $('.third-data strong span').text()
+ 		if (ttdta >= 4) {
+ 			ttdta = 4;
+ 		}
+
+ 		var percent = 100 - ttdta / 4 * 100 + '%';
+ 		$('.data-pic em').css({
+ 			'top': percent
+ 		})
+ 	};
+
+ 	$('#showdialog').click(function () {
+ 		$('.dialog-alert').fadeIn();
+	 });
+	 
+	 $('.dialog-alert .bg, .notice').click(function(){
+		$('.dialog-alert').fadeOut();
+	 })
  });
