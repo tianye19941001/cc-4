@@ -98,4 +98,9 @@
 	 $('.dialog-alert .bg, .notice').click(function(){
 		$('.dialog-alert').fadeOut();
 	 })
+
+	 var len = $('.third-header h3').text().length;
+        if(len > 13) {
+            $('.third-header h3').css({'font-size': '1.2rem'})
+        }
  });
