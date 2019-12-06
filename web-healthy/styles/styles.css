@@ -794,10 +794,14 @@ ul {
   margin-bottom: 0.6666666667rem;
 }
 
-.index-list-1 li:nth-child(2) img,
-.index-list-1 li:nth-child(3) img {
+.index-list-1 li:nth-child(2) img {
   height: 3.1333333333rem;
   margin: 0.1rem auto 0.7666666667rem;
+}
+
+.index-list-1 li:nth-child(3) img {
+  height: 3rem;
+  margin: 0.4rem auto 0.6rem;
 }
 
 .index-list-2 {
@@ -1568,7 +1572,7 @@ ul {
   height: 3.3333333333rem;
   overflow: hidden;
   line-height: 3.3333333333rem;
-  font-size: 1.5333333333rem;
+  font-size: 1.35rem;
   color: #9fa0a0;
   display: block;
   margin: 0 auto 1.6666666667rem;
@@ -1579,7 +1583,7 @@ ul {
 }
 
 .sport-table {
-  width: 16.5rem;
+  width: 21rem;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
 }
@@ -1622,17 +1626,17 @@ ul {
 
 .sport-table .th:nth-child(2),
 .sport-table .td:nth-child(2) {
-  width: 5rem;
+  width: 6.5rem;
 }
 
 .sport-table .th:nth-child(3),
 .sport-table .td:nth-child(3) {
-  width: 2.2666666667rem;
+  width: 4rem;
 }
 
 .sport-table .th:nth-child(4),
 .sport-table .td:nth-child(4) {
-  width: 4.6666666667rem;
+  width: 6rem;
 }
 
 .sport-table .red {
@@ -1640,7 +1644,7 @@ ul {
 }
 
 .sport-table.special {
-  width: 16.5rem;
+  width: 22rem;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
 }
@@ -1678,17 +1682,17 @@ ul {
 
 .sport-table.special .th:first-child,
 .sport-table.special .td:first-child {
-  width: 5.6666666667rem;
+  width: 5.5rem;
 }
 
 .sport-table.special .th:nth-child(2),
 .sport-table.special .td:nth-child(2) {
-  width: 6.5rem;
+  width: 8.5rem;
 }
 
 .sport-table.special .th:nth-child(3),
 .sport-table.special .td:nth-child(3) {
-  width: 3.7666666667rem;
+  width: 8rem;
 }
 
 .sport-table.special .red {
@@ -2428,6 +2432,9 @@ ul {
 
 .second-header-2 .report-detail {
   bottom: 2.3rem;
+  left: auto;
+  right: 0;
+  padding-left: 4.5rem;
 }
 
 .report-detail {
@@ -2440,6 +2447,8 @@ ul {
   background-size: 100% 100%;
   font-size: 1.05rem;
   color: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  padding-left: 2rem;
 }
 
 .report-detail i {
