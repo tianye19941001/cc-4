@@ -1420,12 +1420,14 @@ ul {
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: white;
   text-shadow: 0 0 0.3333333333rem #b8903b;
   position: absolute;
   top: 5rem;
   left: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .third-header p {
@@ -1583,7 +1585,7 @@ ul {
 }
 
 .sport-table {
-  width: 21rem;
+  width: 18.5rem;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
 }
@@ -1622,11 +1624,12 @@ ul {
 .sport-table .th:first-child,
 .sport-table .td:first-child {
   width: 4.5rem;
+  text-align: left;
 }
 
 .sport-table .th:nth-child(2),
 .sport-table .td:nth-child(2) {
-  width: 6.5rem;
+  width: 5rem;
 }
 
 .sport-table .th:nth-child(3),
@@ -1636,7 +1639,7 @@ ul {
 
 .sport-table .th:nth-child(4),
 .sport-table .td:nth-child(4) {
-  width: 6rem;
+  width: 5rem;
 }
 
 .sport-table .red {
@@ -1644,7 +1647,7 @@ ul {
 }
 
 .sport-table.special {
-  width: 22rem;
+  width: 18.5rem;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
 }
@@ -1682,17 +1685,17 @@ ul {
 
 .sport-table.special .th:first-child,
 .sport-table.special .td:first-child {
-  width: 5.5rem;
+  width: 4.5rem;
 }
 
 .sport-table.special .th:nth-child(2),
 .sport-table.special .td:nth-child(2) {
-  width: 8.5rem;
+  width: 7rem;
 }
 
 .sport-table.special .th:nth-child(3),
 .sport-table.special .td:nth-child(3) {
-  width: 8rem;
+  width: 7rem;
 }
 
 .sport-table.special .red {
@@ -2432,9 +2435,6 @@ ul {
 
 .second-header-2 .report-detail {
   bottom: 2.3rem;
-  left: auto;
-  right: 0;
-  padding-left: 4.5rem;
 }
 
 .report-detail {
