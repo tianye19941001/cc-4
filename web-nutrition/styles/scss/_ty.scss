@@ -192,10 +192,11 @@ body {
             position: absolute;
             top: rem(60);
             right: rem(5);
-            width: rem(100);
+            width: rem(106);
             font-size: rem(14);
             color: rgba(254, 147, 102, 1);
             text-align: center;
+            white-space: nowrap;
         }
 
         &.blue {
