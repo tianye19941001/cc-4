@@ -264,6 +264,9 @@ body {
       background: #fff;
       color: #f67f46; }
 
+.food-list.big li {
+  border-radius: 0.5rem; }
+
 .food-list {
   padding-top: 0.6666666667rem;
   width: 20.4rem;

@@ -1541,12 +1541,15 @@ ul {
   color: #9fa0a0;
   line-height: 1.5rem;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem 0 0;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
-.sport-text p,
-.sport-text-2 p {
-  margin-bottom: 0.8rem;
+.sport-text.hidetext {
+  max-height: 7.5rem;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .sport-text p:last-child,
@@ -1596,9 +1599,14 @@ ul {
   text-align: center;
 }
 
-.sport-table .tr:first-child {
+.sport-table>.tr:first-child {
   line-height: 1.6666666667rem;
   height: 1.6666666667rem;
+}
+
+.sport-table .tbody {
+  max-height: 5rem;
+  overflow: scroll;
 }
 
 .sport-table .th span {
@@ -2518,6 +2526,37 @@ ul {
   font-size: 0.75rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.show-or-hide {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background:linear-gradient( to top,rgba(255,255,255,1) 40%,rgba(255,255,255,0) );
+}
+
+.show-or-hide span{
+  width: 1rem;
+  height: 0.6rem;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url(../images/down.png);
+  transform: rotate(180deg);
+}
+
+.sport-text.hidetext .show-or-hide {
+  position: absolute;
+}
+
+.sport-text.hidetext .show-or-hide span{
+  margin-bottom: -0.4rem;
+  transform: rotate(0);
 }
 
 /*# sourceMappingURL=styles.css.map */

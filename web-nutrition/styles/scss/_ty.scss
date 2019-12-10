@@ -148,6 +148,12 @@ body {
     }
 }
 
+.food-list.big {
+    li {
+        border-radius: rem(15);
+    }
+}
+
 .food-list {
     @extend .clearfix;
     padding-top: rem(20);
