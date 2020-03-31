@@ -296,7 +296,8 @@ body {
       width: 3.3333333333rem;
       font-size: 0.6666666667rem;
       color: #fe9366;
-      text-align: center; }
+      text-align: center;
+      white-space: nowrap; }
     .food-list li em {
       display: block;
       position: absolute;
