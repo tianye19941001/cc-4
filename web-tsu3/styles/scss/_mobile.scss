@@ -9,11 +9,11 @@
     min-width: 0;
   }
   .for-mobile {
-    display: inline;
+    display: inline !important;
   }
 
   .for-mobile-db {
-    display: block;
+    display: block !important;
   }
 
   .itools-2, .for-pc {
