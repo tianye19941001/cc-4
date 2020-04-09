@@ -19,7 +19,8 @@ body {
   height: 291px;
   background: rgba(255, 255, 255, 1);
   position: fixed;
-  top: 100px;
+  top: 50%;
+  margin-top: -145px;
   left: 20px;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
   z-index: 9;
@@ -74,7 +75,7 @@ body {
 
       &.active {
         font-weight: bold;
-        color: #792071;
+        a{color: #792071;}
 
         &::before {
           background-color: #fff;
@@ -452,7 +453,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  .teacher-boll {
+  .teacher-boll,.teacher-boll-2 {
     text-align: center;
   }
 
@@ -467,7 +468,7 @@ footer {
   }
 
 
-  .swiper-container-teachers {
+  .swiper-container-teachers,.swiper-container-teachers2 {
     width: 100%;
     overflow: hidden;
 
@@ -593,7 +594,7 @@ footer {
     z-index: 3;
   }
 
-  .teacher-boll {
+  .teacher-boll,.teacher-boll-2 {
     text-align: center;
   }
 
@@ -608,7 +609,7 @@ footer {
   }
 
 
-  .swiper-container-teachers {
+  .swiper-container-teachers,.swiper-container-teachers2 {
     width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
@@ -1102,7 +1103,7 @@ footer {
         }
 
         &.active {
-          color: #A7212F;
+          a{color: #A7212F;}
 
           &::before {
             background-color: #fff;

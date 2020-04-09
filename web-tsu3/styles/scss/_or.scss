@@ -1,0 +1,315 @@
+@charset "utf-8";
+/*容器*/
+.wapper {
+    width: 1002px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*可带二级的导航*/
+.nav {
+    text-align: center;
+}
+
+.nav ul {
+    width: 100%;
+}
+
+.nav>ul {
+    height: 100%;
+}
+
+.nav ul li {
+    float: left;
+    cursor: pointer;
+}
+
+.nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-vertical ul li {
+    width: 100%;
+    float: none;
+}
+
+.nav ul li.last {
+    margin-right: 0;
+}
+
+.nav-vertival li {
+    width: 100%;
+}
+
+/*边栏*/
+.aside {
+    position: fixed;
+    height: 280px;
+    width: 52px;
+    margin-top: -140px;
+    /* top: 50%; */
+    top: 50%;
+    right: 0px;
+}
+
+.aside li {
+    margin-bottom: 2px;
+    height: 54px;
+}
+
+.aside i {
+    *margin-top: -20px;
+}
+
+.aside a {
+    background: #792071;
+}
+
+.aside a:hover {
+    background: #472765
+}
+
+.aside .wechat {
+    position: relative;
+}
+
+.aside .wechat img {
+    position: absolute;
+    right: -130px;
+    top: 0;
+}
+
+.aside .wechat i {
+    padding: 20.5px 16px 26px;
+    background: url(../images/rightaside.png) 0px 32px no-repeat;
+}
+
+.aside .phone i {
+    padding: 22.5px 10px 26px;
+    background: url(../images/rightaside.png) -34px 32px no-repeat;
+}
+
+.aside .book i {
+    padding: 22.5px 14px 24px;
+    background: url(../images/rightaside.png) -55px 32px no-repeat;
+}
+
+.aside .chat i {
+    padding: 22.5px 17px;
+    background: url(../images/rightaside.png) -84px 32px no-repeat;
+}
+
+.aside .totop i {
+    padding: 22.5px 13px;
+    background: url(../images/rightaside.png) -120px 32px no-repeat;
+}
+
+.relativebox {
+    position: relative;
+}
+
+.routeway a:hover {
+    color: #9f6da7;
+}
+
+.header_w {
+    width: 100%;
+    margin: 0 auto;
+    height: 23px;
+    background: url(../images/title_bg.jpg) no-repeat left top
+}
+
+.header_left {
+    width: 460px;
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    height: 23px
+}
+
+.header_left li {
+    float: left;
+    padding-top: 0;
+    _padding-top: 0
+}
+
+*+html .header_left li {
+    padding-top: 4px
+}
+
+.header_left a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 4px;
+    font-family: "宋体"
+}
+
+.header_left a:hover {
+    color: red
+}
+
+.header_left span {
+    color: #666
+}
+
+.header_right {
+    width: 540px;
+    _width: 440px;
+    float: right;
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    font-size: 12px
+}
+
+.header_right ul {
+    margin: 0;
+    padding: 0
+}
+
+.header_right li {
+    float: right;
+    list-style: none;
+}
+
+.header_right li span {
+    color: #890000
+}
+
+.header_right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 3px
+}
+
+.header_right a:hover {
+    color: red
+}
+
+.header_right_en {
+    width: 420px;
+    _width: 420px;
+    float: right;
+    background: #890000;
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    font-size: 12px
+}
+
+.header_right_en ul {
+    margin: 0;
+    padding: 0
+}
+
+.header_right_en li {
+    float: right
+}
+
+.header_right_en li span {
+    color: #890000
+}
+
+.header_right_en a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 3px
+}
+
+.header_right_en a:hover {
+    color: red
+}
+
+.banner_middle img {
+    display: block;
+}
+
+.h_entor {
+    margin-right: 10px;
+    _margin-right: 5px;
+    margin-left: 1px;
+    background: url(../images/ico1.gif) no-repeat 0 2px;
+    padding-left: 14px
+}
+
+.topnav {
+    color: #fff;
+    background: url("../images/nav-bg.png") repeat-x
+}
+
+.topnav ul li {
+    position: relative;
+    height: 39px;
+    line-height: 39px;
+    width: 110px;
+    font-size: 16px;
+    z-index: 1;
+    border-right: 1px #ba9051 solid
+}
+
+.topnav ul li.last {
+    border-right: 0;
+    width: 114px
+}
+
+.topnav ul li a:hover {
+    text-decoration: none;
+    background: #c6b384
+}
+
+.topnav li .child {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    background: #BEB094;
+    display: none;
+    width: 100%
+}
+
+.topnav a,
+.topnav a:hover {
+    color: #fff
+}
+
+.topnav li .child a {
+    display: block;
+    line-height: 16px;
+    padding: 13px 23px;
+    line-height: 13px;
+    background: #c4a862;
+    width: auto;
+    height: auto
+}
+
+.topnav li.columbia .child {
+    padding-top: 0;
+    width: 221px;
+    text-align: left
+}
+
+.topnav li.columbia a.columbia {
+    line-height: 23px;
+    padding-top: 6px;
+    padding-bottom: 26px
+}
+
+.topnav li .child a:hover {
+    background: #d2bb6c
+}
+
+.cfeature .hp07w3 {
+    display: table-cell
+}
+
+li.wechat img {
+    transition: 1s;
+}
+
+li.wechat:hover img {
+    opacity: 1;
+    right: 52px;
+}
