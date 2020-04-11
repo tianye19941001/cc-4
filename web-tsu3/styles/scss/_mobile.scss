@@ -462,6 +462,7 @@
     .swiper-container-teachers,.swiper-container-teachers2 {
 
       li {
+        clear: both;
         float: none;
         width: rem(540);
         margin: 0 0 rem(20) rem(50);
