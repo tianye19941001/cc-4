@@ -225,6 +225,8 @@
     }
 
     .ty-class-2 {
+      padding-left: 0;
+      width: 100%;
       padding-top: 0;
       margin-bottom: rem(70);
       height: auto;
@@ -400,7 +402,6 @@
           img {
             position: absolute;
             width: 1.7rem;
-            width: auto;
             top: 5.3rem;
             left: 15.2rem;
           }
@@ -551,6 +552,7 @@
 
     >img {
       height: rem(288);
+      top: 0 !important;
     }
 
     .title-min {
@@ -712,9 +714,10 @@
       }
   
       p {
-        width: rem(375);
-        font-size: rem(21);
+        width: rem(460);
+        font-size: rem(24);
         margin: 0 auto;
+        white-space: nowrap;
       }
     }
   
@@ -935,6 +938,7 @@
         .in {
           width: rem(492);
           margin: 0 auto;
+          height: auto;
         }
   
         a {
